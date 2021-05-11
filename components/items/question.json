@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_items_questions",
+  "info": {
+    "name": "Question",
+    "icon": "question",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "statement": {
+      "type": "string",
+      "minLength": 15,
+      "maxLength": 25,
+      "required": true
+    },
+    "answer": {
+      "type": "string",
+      "minLength": 5
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "BOOL",
+        "MULTIPLE",
+        "OPEN_SHORT",
+        "OPEN_LONG",
+        "SINGLE"
+      ],
+      "enumName": "QuestionType",
+      "required": true,
+      "default": "BOOL"
+    }
+  }
+}

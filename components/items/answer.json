@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_items_answers",
+  "info": {
+    "name": "Answer",
+    "icon": "comment-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "answer": {
+      "type": "string",
+      "required": true,
+      "minLength": 5,
+      "maxLength": 15
+    },
+    "statement": {
+      "type": "string",
+      "minLength": 15,
+      "maxLength": 25,
+      "required": true
+    }
+  }
+}

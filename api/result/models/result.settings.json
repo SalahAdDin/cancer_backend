@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "results",
+  "info": {
+    "name": "Result"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "iteration": {
+      "type": "integer",
+      "default": 1,
+      "min": 1,
+      "required": true
+    },
+    "answers": {
+      "type": "component",
+      "repeatable": true,
+      "component": "items.answer"
+    }
+  }
+}

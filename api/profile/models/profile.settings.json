@@ -1,0 +1,67 @@
+{
+  "kind": "collectionType",
+  "collectionName": "profiles",
+  "info": {
+    "name": "Profile",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user": {
+      "via": "profile",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "role": {
+      "type": "enumeration",
+      "enum": [
+        "PILOT",
+        "TEST",
+        "CONTROL"
+      ],
+      "default": "PILOT",
+      "enumName": "UserRole",
+      "required": true
+    },
+    "phoneNumber": {
+      "type": "string",
+      "default": "+905373749236",
+      "minLength": 12,
+      "maxLength": 16,
+      "unique": true
+    },
+    "isConfirmed": {
+      "type": "boolean",
+      "default": false
+    },
+    "hasSeenTutorial": {
+      "type": "boolean",
+      "default": false
+    },
+    "hasSeenIntroductoryVideo": {
+      "type": "boolean",
+      "default": false,
+      "required": false
+    },
+    "profilePhoto": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "bio": {
+      "type": "richtext",
+      "minLength": 125,
+      "maxLength": 350
+    }
+  }
+}
