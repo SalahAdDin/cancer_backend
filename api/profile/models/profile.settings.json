@@ -34,10 +34,6 @@
       "maxLength": 16,
       "unique": true
     },
-    "isConfirmed": {
-      "type": "boolean",
-      "default": false
-    },
     "hasSeenTutorial": {
       "type": "boolean",
       "default": false
