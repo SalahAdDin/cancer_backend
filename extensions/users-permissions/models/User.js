@@ -7,11 +7,11 @@ module.exports = {
         await strapi.services.profile.create({
           user: result.id,
         });
+        await strapi
+          .query("user", "users-permissions")
+          .update({ id: result.id }, { confirmed: false });
       } catch (error) {
-        console.log(
-          "Error creating user profile after registering user: ",
-          error
-        );
+        console.log("Error after registering new user: ", error);
       }
     },
   },
