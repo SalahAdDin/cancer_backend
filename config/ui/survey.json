@@ -44,9 +44,20 @@
       },
       "list": { "label": "Questions", "searchable": false, "sortable": false }
     },
+    "results": {
+      "edit": {
+        "label": "Results",
+        "description": "",
+        "placeholder": "",
+        "visible": true,
+        "editable": true,
+        "mainField": "id"
+      },
+      "list": { "label": "Results", "searchable": false, "sortable": false }
+    },
     "created_at": {
       "edit": {
-        "label": "Created_at",
+        "label": "Created At",
         "description": "",
         "placeholder": "",
         "visible": false,
@@ -56,7 +67,7 @@
     },
     "updated_at": {
       "edit": {
-        "label": "Updated_at",
+        "label": "Updated At",
         "description": "",
         "placeholder": "",
         "visible": false,
@@ -71,7 +82,7 @@
       [{ "name": "intro", "size": 12 }],
       [{ "name": "questions", "size": 12 }]
     ],
-    "editRelations": [],
-    "list": ["id", "title", "created_at", "updated_at"]
+    "editRelations": ["results"],
+    "list": ["id", "title", "created_at", "updated_at", "results"]
   }
 }

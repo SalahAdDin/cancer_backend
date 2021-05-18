@@ -12,18 +12,32 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "firstName": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 15
+    },
+    "lastName": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 15
+    },
     "user": {
       "via": "profile",
       "plugin": "users-permissions",
       "model": "user"
     },
+    "profilePhoto": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": ["images"],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
     "role": {
       "type": "enumeration",
-      "enum": [
-        "PILOT",
-        "TEST",
-        "CONTROL"
-      ],
+      "enum": ["PILOT", "TEST", "CONTROL"],
       "default": "PILOT",
       "enumName": "UserRole",
       "required": true
@@ -43,30 +57,10 @@
       "default": false,
       "required": false
     },
-    "profilePhoto": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images"
-      ],
-      "plugin": "upload",
-      "required": false,
-      "pluginOptions": {}
-    },
     "bio": {
       "type": "richtext",
       "minLength": 125,
       "maxLength": 350
-    },
-    "firstName": {
-      "type": "string",
-      "minLength": 3,
-      "maxLength": 15
-    },
-    "lastName": {
-      "type": "string",
-      "minLength": 3,
-      "maxLength": 15
     }
   }
 }

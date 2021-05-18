@@ -12,14 +12,14 @@
   "metadatas": {
     "confirmationToken": {
       "edit": {
-        "label": "ConfirmationToken",
+        "label": "Confirmation Token",
         "description": "",
         "placeholder": "",
         "visible": false,
         "editable": true
       },
       "list": {
-        "label": "ConfirmationToken",
+        "label": "Confirmation Token",
         "searchable": true,
         "sortable": true
       }
@@ -31,13 +31,13 @@
         "placeholder": "",
         "visible": true,
         "editable": true,
-        "mainField": "phoneNumber"
+        "mainField": "firstName"
       },
       "list": { "label": "Profile", "searchable": true, "sortable": true }
     },
     "created_at": {
       "edit": {
-        "label": "Created_at",
+        "label": "Created At",
         "description": "",
         "placeholder": "",
         "visible": false,
@@ -57,14 +57,14 @@
     },
     "resetPasswordToken": {
       "edit": {
-        "label": "ResetPasswordToken",
+        "label": "Reset Password Token",
         "description": "",
         "placeholder": "",
         "visible": false,
         "editable": true
       },
       "list": {
-        "label": "ResetPasswordToken",
+        "label": "Reset Password Token",
         "searchable": true,
         "sortable": true
       }
@@ -102,13 +102,13 @@
     },
     "updated_at": {
       "edit": {
-        "label": "Updated_at",
+        "label": "Updated At",
         "description": "",
         "placeholder": "",
         "visible": false,
         "editable": true
       },
-      "list": { "label": "Updated_at", "searchable": true, "sortable": true }
+      "list": { "label": "Updated At", "searchable": true, "sortable": true }
     },
     "id": {
       "edit": {},
@@ -123,6 +123,21 @@
         "editable": true
       },
       "list": { "label": "Password", "searchable": true, "sortable": true }
+    },
+    "surveyResults": {
+      "edit": {
+        "label": "Survey Results",
+        "description": "",
+        "placeholder": "",
+        "visible": true,
+        "editable": true,
+        "mainField": "id"
+      },
+      "list": {
+        "label": "Survey Results",
+        "searchable": false,
+        "sortable": false
+      }
     },
     "email": {
       "edit": {
@@ -157,7 +172,15 @@
       ],
       [{ "name": "blocked", "size": 4 }]
     ],
-    "editRelations": ["role", "profile"],
-    "list": ["id", "username", "email", "profile", "confirmed", "created_at"]
+    "editRelations": ["role", "profile", "surveyResults"],
+    "list": [
+      "id",
+      "username",
+      "email",
+      "profile",
+      "confirmed",
+      "created_at",
+      "surveyResults"
+    ]
   }
 }
