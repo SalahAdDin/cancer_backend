@@ -16,13 +16,14 @@ const setUICustomization = async (fileLocation) => {
   // This assumes the file is named the same as the content type but this is by design because it makes sense...
   const contentType = path.basename(fileLocation, ".json");
 
-  if ((contentType.split(".").length = 1))
+  if ((contentType.split(".").length = 1)) {
     const tablePath = `plugin_content_manager_configuration_content_types::application::${contentType}.${contentType}`;
-  else {
-    if ((contentType.split(".")[0] = "items"))
+  } else {
+    if ((contentType.split(".")[0] = "items")) {
       const tablePath = `plugin_content_manager_configuration_components::${contentType}`;
-    else
+    } else {
       const tablePath = `plugin_content_manager_configuration_content_types::plugins::${contentType}`;
+    }
   }
 
   // Get the default knex connection as this query is easier to perform without the strapi wrapper abstraction...
