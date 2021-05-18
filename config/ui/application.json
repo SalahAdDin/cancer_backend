@@ -1,0 +1,89 @@
+{
+  "uid": "application::application.application",
+  "settings": {
+    "bulkable": true,
+    "filterable": true,
+    "searchable": true,
+    "pageSize": 10,
+    "mainField": "id",
+    "defaultSortBy": "id",
+    "defaultSortOrder": "ASC"
+  },
+  "metadatas": {
+    "id": {
+      "edit": {},
+      "list": { "label": "Id", "searchable": true, "sortable": true }
+    },
+    "introductoryVideo": {
+      "edit": {
+        "label": "Introductory Video",
+        "description": "",
+        "placeholder": "",
+        "visible": true,
+        "editable": true
+      },
+      "list": {
+        "label": "Introductory Video",
+        "searchable": false,
+        "sortable": false
+      }
+    },
+    "registeringSurvey": {
+      "edit": {
+        "label": "Registering Survey",
+        "description": "Kayıt olurken hangi anket doldurulmalıdır?",
+        "placeholder": "",
+        "visible": true,
+        "editable": true,
+        "mainField": "title"
+      },
+      "list": {
+        "label": "Registering Survey",
+        "searchable": true,
+        "sortable": true
+      }
+    },
+    "surveySchedules": {
+      "edit": {
+        "label": "Survey Schedules",
+        "description": "",
+        "placeholder": "",
+        "visible": true,
+        "editable": true
+      },
+      "list": {
+        "label": "Survey Schedules",
+        "searchable": false,
+        "sortable": false
+      }
+    },
+    "created_at": {
+      "edit": {
+        "label": "Created At",
+        "description": "",
+        "placeholder": "",
+        "visible": false,
+        "editable": true
+      },
+      "list": { "label": "Created At", "searchable": true, "sortable": true }
+    },
+    "updated_at": {
+      "edit": {
+        "label": "Updated At",
+        "description": "",
+        "placeholder": "",
+        "visible": false,
+        "editable": true
+      },
+      "list": { "label": "Updated At", "searchable": true, "sortable": true }
+    }
+  },
+  "layouts": {
+    "edit": [
+      [{ "name": "introductoryVideo", "size": 6 }],
+      [{ "name": "surveySchedules", "size": 12 }]
+    ],
+    "editRelations": ["registeringSurvey"],
+    "list": ["id", "introductoryVideo", "created_at", "updated_at"]
+  }
+}

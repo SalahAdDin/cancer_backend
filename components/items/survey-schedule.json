@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_items_survey_schedules",
+  "info": {
+    "name": "surveySchedule",
+    "icon": "calendar-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "survey": {
+      "model": "survey"
+    },
+    "iterations": {
+      "type": "integer",
+      "required": true,
+      "min": 1
+    },
+    "step": {
+      "type": "integer",
+      "required": true,
+      "min": 1
+    }
+  }
+}
