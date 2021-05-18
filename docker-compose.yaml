@@ -1,0 +1,39 @@
+version: '3'
+services:
+  strapi:
+    container_name: cancer_backend
+    image: strapi/strapi
+    environment:
+      DATABASE_CLIENT: postgres
+      DATABASE_NAME: strapi
+      DATABASE_HOST: postgres
+      DATABASE_PORT: 5432
+      DATABASE_USERNAME: strapi
+      DATABASE_PASSWORD: strapi
+    volumes:
+      - ./backend:/srv/app
+    ports:
+      - '1337:1337'
+    depends_on:
+      - postgres
+
+  postgres:
+    container_name: cancer_db
+    image: postgres
+    environment:
+      POSTGRES_DB: strapi
+      POSTGRES_USER: strapi
+      POSTGRES_PASSWORD: strapi
+    volumes:
+      - ./data:/var/lib/postgresql/data
+      
+  access_db:
+    container_name: access_cancer_db
+    restart: always
+    image: sosedoff/pgweb
+    ports:
+      - "8087:8081"
+    environment:
+      - DATABASE_URL=postgres://strapi:strapi@cancer_db:5432/postgres?sslmode=disable
+      - VIRTUAL_HOST=strapi.db.localhost
+      - VIRTUAL_PORT=8087
