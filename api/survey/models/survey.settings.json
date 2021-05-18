@@ -44,6 +44,9 @@
         }
       },
       "component": "items.question"
+    },
+    "results": {
+      "collection": "result"
     }
   }
 }
