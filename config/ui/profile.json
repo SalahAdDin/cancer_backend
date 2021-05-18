@@ -1,0 +1,172 @@
+{
+  "uid": "application::profile.profile",
+  "settings": {
+    "bulkable": true,
+    "filterable": true,
+    "searchable": true,
+    "pageSize": 20,
+    "mainField": "firstName",
+    "defaultSortBy": "phoneNumber",
+    "defaultSortOrder": "ASC"
+  },
+  "metadatas": {
+    "lastName": {
+      "edit": {
+        "label": "Last Name",
+        "description": "",
+        "placeholder": "",
+        "visible": true,
+        "editable": true
+      },
+      "list": { "label": "Last Name", "searchable": true, "sortable": true }
+    },
+    "bio": {
+      "edit": {
+        "label": "Bio",
+        "description": "",
+        "placeholder": "",
+        "visible": true,
+        "editable": true
+      },
+      "list": { "label": "Bio", "searchable": false, "sortable": false }
+    },
+    "profilePhoto": {
+      "edit": {
+        "label": "Profile Photo",
+        "description": "",
+        "placeholder": "",
+        "visible": true,
+        "editable": true
+      },
+      "list": {
+        "label": "Profile Photo",
+        "searchable": false,
+        "sortable": false
+      }
+    },
+    "created_at": {
+      "edit": {
+        "label": "Created_at",
+        "description": "",
+        "placeholder": "",
+        "visible": false,
+        "editable": true
+      },
+      "list": { "label": "Created At", "searchable": true, "sortable": true }
+    },
+    "user": {
+      "edit": {
+        "label": "User",
+        "description": "",
+        "placeholder": "",
+        "visible": true,
+        "editable": true,
+        "mainField": "username"
+      },
+      "list": { "label": "User", "searchable": true, "sortable": true }
+    },
+    "hasSeenTutorial": {
+      "edit": {
+        "label": "Has Seen Tutorial",
+        "description": "",
+        "placeholder": "",
+        "visible": true,
+        "editable": true
+      },
+      "list": {
+        "label": "Has Seen Tutorial",
+        "searchable": true,
+        "sortable": true
+      }
+    },
+    "role": {
+      "edit": {
+        "label": "Role",
+        "description": "",
+        "placeholder": "",
+        "visible": true,
+        "editable": true
+      },
+      "list": { "label": "Role", "searchable": true, "sortable": true }
+    },
+    "updated_at": {
+      "edit": {
+        "label": "Updated_at",
+        "description": "",
+        "placeholder": "",
+        "visible": false,
+        "editable": true
+      },
+      "list": { "label": "Updated_at", "searchable": true, "sortable": true }
+    },
+    "phoneNumber": {
+      "edit": {
+        "label": "Phone Number",
+        "description": "",
+        "placeholder": "",
+        "visible": true,
+        "editable": true
+      },
+      "list": { "label": "Phone Number", "searchable": true, "sortable": true }
+    },
+    "id": {
+      "edit": {},
+      "list": { "label": "Id", "searchable": true, "sortable": true }
+    },
+    "firstName": {
+      "edit": {
+        "label": "First Name",
+        "description": "",
+        "placeholder": "",
+        "visible": true,
+        "editable": true
+      },
+      "list": { "label": "First Name", "searchable": true, "sortable": true }
+    },
+    "hasSeenIntroductoryVideo": {
+      "edit": {
+        "label": "Has Seen Introductory Video",
+        "description": "",
+        "placeholder": "",
+        "visible": true,
+        "editable": true
+      },
+      "list": {
+        "label": "Has Seen Introductory Video",
+        "searchable": true,
+        "sortable": true
+      }
+    }
+  },
+  "layouts": {
+    "edit": [
+      [
+        { "name": "firstName", "size": 6 },
+        { "name": "lastName", "size": 6 }
+      ],
+      [
+        { "name": "role", "size": 6 },
+        { "name": "phoneNumber", "size": 6 }
+      ],
+      [
+        { "name": "hasSeenTutorial", "size": 4 },
+        { "name": "hasSeenIntroductoryVideo", "size": 4 }
+      ],
+      [{ "name": "profilePhoto", "size": 6 }],
+      [{ "name": "bio", "size": 12 }]
+    ],
+    "editRelations": ["user"],
+    "list": [
+      "id",
+      "profilePhoto",
+      "firstName",
+      "lastName",
+      "user",
+      "role",
+      "phoneNumber",
+      "created_at",
+      "hasSeenTutorial",
+      "hasSeenIntroductoryVideo"
+    ]
+  }
+}

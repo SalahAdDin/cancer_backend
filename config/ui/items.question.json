@@ -1,0 +1,60 @@
+{
+  "uid": "items.question",
+  "settings": {
+    "bulkable": true,
+    "filterable": true,
+    "searchable": true,
+    "pageSize": 10,
+    "mainField": "statement",
+    "defaultSortBy": "statement",
+    "defaultSortOrder": "ASC"
+  },
+  "metadatas": {
+    "id": {
+      "edit": {},
+      "list": { "label": "Id", "searchable": false, "sortable": false }
+    },
+    "statement": {
+      "edit": {
+        "label": "Statement",
+        "description": "",
+        "placeholder": "",
+        "visible": true,
+        "editable": true
+      },
+      "list": { "label": "Statement", "searchable": true, "sortable": true }
+    },
+    "answer": {
+      "edit": {
+        "label": "Answer",
+        "description": "",
+        "placeholder": "",
+        "visible": true,
+        "editable": true
+      },
+      "list": { "label": "Answer", "searchable": true, "sortable": true }
+    },
+    "type": {
+      "edit": {
+        "label": "Type",
+        "description": "",
+        "placeholder": "",
+        "visible": true,
+        "editable": true
+      },
+      "list": { "label": "Type", "searchable": true, "sortable": true }
+    }
+  },
+  "layouts": {
+    "list": ["id", "statement", "answer", "type"],
+    "edit": [
+      [
+        { "name": "statement", "size": 6 },
+        { "name": "type", "size": 6 }
+      ],
+      [{ "name": "answer", "size": 6 }]
+    ],
+    "editRelations": []
+  },
+  "isComponent": true
+}

@@ -1,0 +1,66 @@
+{
+  "uid": "application::result.result",
+  "settings": {
+    "bulkable": true,
+    "filterable": true,
+    "searchable": true,
+    "pageSize": 20,
+    "mainField": "id",
+    "defaultSortBy": "id",
+    "defaultSortOrder": "ASC"
+  },
+  "metadatas": {
+    "id": {
+      "edit": {},
+      "list": { "label": "Id", "searchable": true, "sortable": true }
+    },
+    "iteration": {
+      "edit": {
+        "label": "Iteration",
+        "description": "",
+        "placeholder": "",
+        "visible": true,
+        "editable": true
+      },
+      "list": { "label": "Iteration", "searchable": true, "sortable": true }
+    },
+    "answers": {
+      "edit": {
+        "label": "Answers",
+        "description": "",
+        "placeholder": "",
+        "visible": true,
+        "editable": true
+      },
+      "list": { "label": "Answers", "searchable": false, "sortable": false }
+    },
+    "created_at": {
+      "edit": {
+        "label": "Created_at",
+        "description": "",
+        "placeholder": "",
+        "visible": false,
+        "editable": true
+      },
+      "list": { "label": "Created_at", "searchable": true, "sortable": true }
+    },
+    "updated_at": {
+      "edit": {
+        "label": "Updated_at",
+        "description": "",
+        "placeholder": "",
+        "visible": false,
+        "editable": true
+      },
+      "list": { "label": "Updated_at", "searchable": true, "sortable": true }
+    }
+  },
+  "layouts": {
+    "list": ["id", "iteration", "created_at", "updated_at"],
+    "editRelations": [],
+    "edit": [
+      [{ "name": "iteration", "size": 4 }],
+      [{ "name": "answers", "size": 12 }]
+    ]
+  }
+}
