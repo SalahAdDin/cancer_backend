@@ -34,7 +34,7 @@
       "required": true,
       "unique": false
     },
-    "content": {
+    "description": {
       "pluginOptions": {
         "i18n": {
           "localized": true
