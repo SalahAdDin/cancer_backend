@@ -7,7 +7,7 @@
   },
   "options": {
     "draftAndPublish": false,
-    "timestamps": true
+    "timestamps": ["createdAt", "updatedAt"]
   },
   "attributes": {
     "username": {

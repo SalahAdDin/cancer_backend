@@ -34,29 +34,29 @@
       },
       "list": { "label": "Answers", "searchable": false, "sortable": false }
     },
-    "created_at": {
+    "createdAt": {
       "edit": {
-        "label": "Created_at",
+        "label": "Created At",
         "description": "",
         "placeholder": "",
         "visible": false,
         "editable": true
       },
-      "list": { "label": "Created_at", "searchable": true, "sortable": true }
+      "list": { "label": "Created At", "searchable": true, "sortable": true }
     },
-    "updated_at": {
+    "updatedAt": {
       "edit": {
-        "label": "Updated_at",
+        "label": "Updated At",
         "description": "",
         "placeholder": "",
         "visible": false,
         "editable": true
       },
-      "list": { "label": "Updated_at", "searchable": true, "sortable": true }
+      "list": { "label": "Updated At", "searchable": true, "sortable": true }
     }
   },
   "layouts": {
-    "list": ["id", "iteration", "created_at", "updated_at"],
+    "list": ["id", "iteration", "createdAt", "updatedAt"],
     "editRelations": [],
     "edit": [
       [{ "name": "iteration", "size": 4 }],

@@ -55,7 +55,7 @@
       },
       "list": { "label": "Results", "searchable": false, "sortable": false }
     },
-    "created_at": {
+    "createdAt": {
       "edit": {
         "label": "Created At",
         "description": "",
@@ -65,7 +65,7 @@
       },
       "list": { "label": "Created At", "searchable": true, "sortable": true }
     },
-    "updated_at": {
+    "updatedAt": {
       "edit": {
         "label": "Updated At",
         "description": "",
@@ -83,6 +83,6 @@
       [{ "name": "questions", "size": 12 }]
     ],
     "editRelations": ["results"],
-    "list": ["id", "title", "created_at", "updated_at", "results"]
+    "list": ["id", "title", "createdAt", "updatedAt", "results"]
   }
 }

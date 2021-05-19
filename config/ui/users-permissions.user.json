@@ -35,7 +35,7 @@
       },
       "list": { "label": "Profile", "searchable": true, "sortable": true }
     },
-    "created_at": {
+    "createdAt": {
       "edit": {
         "label": "Created At",
         "description": "",
@@ -100,7 +100,7 @@
       },
       "list": { "label": "Username", "searchable": true, "sortable": true }
     },
-    "updated_at": {
+    "updatedAt": {
       "edit": {
         "label": "Updated At",
         "description": "",
@@ -179,7 +179,7 @@
       "email",
       "profile",
       "confirmed",
-      "created_at",
+      "createdAt",
       "surveyResults"
     ]
   }

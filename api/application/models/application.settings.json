@@ -7,7 +7,7 @@
   },
   "options": {
     "increments": true,
-    "timestamps": true,
+    "timestamps": ["createdAt", "updatedAt"],
     "draftAndPublish": false
   },
   "pluginOptions": {
@@ -19,9 +19,7 @@
     "introductoryVideo": {
       "model": "file",
       "via": "related",
-      "allowedTypes": [
-        "videos"
-      ],
+      "allowedTypes": ["videos"],
       "plugin": "upload",
       "required": true,
       "pluginOptions": {

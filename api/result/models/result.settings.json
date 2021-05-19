@@ -6,7 +6,7 @@
   },
   "options": {
     "increments": true,
-    "timestamps": true,
+    "timestamps": ["createdAt", "updatedAt"],
     "draftAndPublish": false
   },
   "pluginOptions": {},
