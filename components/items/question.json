@@ -10,12 +10,13 @@
     "statement": {
       "type": "string",
       "minLength": 15,
-      "maxLength": 25,
+      "maxLength": 150,
       "required": true
     },
     "answer": {
       "type": "string",
-      "minLength": 5
+      "minLength": 5,
+      "maxLength": 150
     },
     "type": {
       "type": "enumeration",
