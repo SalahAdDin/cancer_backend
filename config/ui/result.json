@@ -34,6 +34,28 @@
       },
       "list": { "label": "Answers", "searchable": false, "sortable": false }
     },
+    "user": {
+      "edit": {
+        "label": "User",
+        "description": "",
+        "placeholder": "",
+        "visible": true,
+        "editable": true,
+        "mainField": "username"
+      },
+      "list": { "label": "User", "searchable": true, "sortable": true }
+    },
+    "survey": {
+      "edit": {
+        "label": "Survey",
+        "description": "",
+        "placeholder": "",
+        "visible": true,
+        "editable": true,
+        "mainField": "title"
+      },
+      "list": { "label": "Survey", "searchable": true, "sortable": true }
+    },
     "createdAt": {
       "edit": {
         "label": "Created At",
@@ -56,11 +78,11 @@
     }
   },
   "layouts": {
-    "list": ["id", "iteration", "createdAt", "updatedAt"],
-    "editRelations": [],
     "edit": [
       [{ "name": "iteration", "size": 4 }],
       [{ "name": "answers", "size": 12 }]
-    ]
+    ],
+    "editRelations": ["user", "survey"],
+    "list": ["id", "iteration", "createdAt", "updatedAt", "user", "survey"]
   }
 }

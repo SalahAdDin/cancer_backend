@@ -77,12 +77,12 @@
     }
   },
   "layouts": {
+    "list": ["id", "title", "results", "createdAt"],
     "edit": [
       [{ "name": "title", "size": 6 }],
       [{ "name": "intro", "size": 12 }],
       [{ "name": "questions", "size": 12 }]
     ],
-    "editRelations": ["results"],
-    "list": ["id", "title", "createdAt", "updatedAt", "results"]
+    "editRelations": ["results"]
   }
 }

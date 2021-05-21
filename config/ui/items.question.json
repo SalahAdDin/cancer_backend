@@ -27,8 +27,8 @@
     "answer": {
       "edit": {
         "label": "Answer",
-        "description": "",
-        "placeholder": "",
+        "description": "\"MULTIPLE\" veya \"SINGLE\" türündeki sorular için virgülle ayrılmış tüm olası yanıtlar.",
+        "placeholder": "1,2,3,4,5 ve üzeri",
         "visible": true,
         "editable": true
       },

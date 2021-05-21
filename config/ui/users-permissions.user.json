@@ -35,16 +35,6 @@
       },
       "list": { "label": "Profile", "searchable": true, "sortable": true }
     },
-    "createdAt": {
-      "edit": {
-        "label": "Created At",
-        "description": "",
-        "placeholder": "",
-        "visible": false,
-        "editable": true
-      },
-      "list": { "label": "Created At", "searchable": true, "sortable": true }
-    },
     "blocked": {
       "edit": {
         "label": "Blocked",
@@ -54,6 +44,16 @@
         "editable": true
       },
       "list": { "label": "Blocked", "searchable": true, "sortable": true }
+    },
+    "updatedAt": {
+      "edit": {
+        "label": "Updated At",
+        "description": "",
+        "placeholder": "",
+        "visible": false,
+        "editable": true
+      },
+      "list": { "label": "Updated At", "searchable": true, "sortable": true }
     },
     "resetPasswordToken": {
       "edit": {
@@ -100,19 +100,19 @@
       },
       "list": { "label": "Username", "searchable": true, "sortable": true }
     },
-    "updatedAt": {
+    "id": {
+      "edit": {},
+      "list": { "label": "Id", "searchable": true, "sortable": true }
+    },
+    "createdAt": {
       "edit": {
-        "label": "Updated At",
+        "label": "Created At",
         "description": "",
         "placeholder": "",
         "visible": false,
         "editable": true
       },
-      "list": { "label": "Updated At", "searchable": true, "sortable": true }
-    },
-    "id": {
-      "edit": {},
-      "list": { "label": "Id", "searchable": true, "sortable": true }
+      "list": { "label": "Created At", "searchable": true, "sortable": true }
     },
     "password": {
       "edit": {

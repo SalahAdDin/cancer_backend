@@ -49,7 +49,8 @@
       "component": "items.question"
     },
     "results": {
-      "collection": "result"
+      "collection": "result",
+      "via": "survey"
     }
   }
 }

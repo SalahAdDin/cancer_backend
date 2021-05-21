@@ -7,7 +7,10 @@
   },
   "options": {
     "increments": true,
-    "timestamps": ["createdAt", "updatedAt"],
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ],
     "draftAndPublish": false
   },
   "pluginOptions": {},
@@ -30,14 +33,20 @@
     "profilePhoto": {
       "model": "file",
       "via": "related",
-      "allowedTypes": ["images"],
+      "allowedTypes": [
+        "images"
+      ],
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
     },
     "role": {
       "type": "enumeration",
-      "enum": ["PILOT", "TEST", "CONTROL"],
+      "enum": [
+        "PILOT",
+        "TEST",
+        "CONTROL"
+      ],
       "default": "PILOT",
       "enumName": "UserRole",
       "required": true

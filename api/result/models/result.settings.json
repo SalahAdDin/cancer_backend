@@ -24,6 +24,15 @@
       "type": "component",
       "repeatable": true,
       "component": "items.answer"
+    },
+    "user": {
+      "via": "surveyResults",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "survey": {
+      "via": "results",
+      "model": "survey"
     }
   }
 }
