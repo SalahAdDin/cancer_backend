@@ -35,4 +35,17 @@ module.exports = ({ env }) => ({
       testAddress: env("EMAIL_DEFAULT_TEST"),
     },
   },
+  "config-sync": {
+    destination: "extensions/config-sync/files/",
+    minify: false,
+    importOnBootstrap: false,
+    include: ["core-store", "role-permissions"],
+    exclude: [
+      "core-store.model_def_application",
+      "core-store.model_def_items",
+      "core-store.model_def_plugins",
+      "core-store.model_def_strapi",
+      "core-store.plugin_users-permissions_grant",
+    ],
+  },
 });
