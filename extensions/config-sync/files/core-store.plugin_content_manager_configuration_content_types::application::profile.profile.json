@@ -1,0 +1,243 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::application::profile.profile",
+  "value": {
+    "uid": "application::profile.profile",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 20,
+      "mainField": "firstName",
+      "defaultSortBy": "firstName",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "Id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "firstName": {
+        "edit": {
+          "label": "First Name",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "First Name",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "lastName": {
+        "edit": {
+          "label": "Last Name",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Last Name",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "user": {
+        "edit": {
+          "label": "User",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "username"
+        },
+        "list": {
+          "label": "User",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "profilePhoto": {
+        "edit": {
+          "label": "Profile Photo",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Profile Photo",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "role": {
+        "edit": {
+          "label": "Role",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Role",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "phoneNumber": {
+        "edit": {
+          "label": "Phone Number",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Phone Number",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "hasSeenTutorial": {
+        "edit": {
+          "label": "Has Seen Tutorial",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Has Seen Tutorial",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "hasSeenIntroductoryVideo": {
+        "edit": {
+          "label": "Has Seen Introductory Video",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Has Seen Introductory Video",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "bio": {
+        "edit": {
+          "label": "Bio",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Bio",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "CreatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "CreatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "UpdatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "UpdatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "profilePhoto",
+        "firstName",
+        "lastName",
+        "user",
+        "role",
+        "phoneNumber",
+        "hasSeenTutorial",
+        "hasSeenIntroductoryVideo"
+      ],
+      "edit": [
+        [
+          {
+            "name": "firstName",
+            "size": 6
+          },
+          {
+            "name": "lastName",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "role",
+            "size": 6
+          },
+          {
+            "name": "phoneNumber",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "hasSeenTutorial",
+            "size": 4
+          },
+          {
+            "name": "hasSeenIntroductoryVideo",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "profilePhoto",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "bio",
+            "size": 12
+          }
+        ]
+      ],
+      "editRelations": [
+        "user"
+      ]
+    }
+  },
+  "type": "object",
+  "environment": "",
+  "tag": ""
+}

@@ -1,0 +1,124 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::application::application.application",
+  "value": {
+    "uid": "application::application.application",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "id",
+      "defaultSortBy": "id",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "Id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "introductoryVideo": {
+        "edit": {
+          "label": "Introductory Video",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "IntroductoryVideo",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "registeringSurvey": {
+        "edit": {
+          "label": "Registering Survey",
+          "description": "Kayıt olurken hangi anket doldurulmalıdır?",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "title"
+        },
+        "list": {
+          "label": "RegisteringSurvey",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "surveySchedules": {
+        "edit": {
+          "label": "Survey Schedules",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "SurveySchedules",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "CreatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "CreatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "UpdatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "UpdatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "introductoryVideo",
+        "createdAt",
+        "updatedAt"
+      ],
+      "edit": [
+        [
+          {
+            "name": "introductoryVideo",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "surveySchedules",
+            "size": 12
+          }
+        ]
+      ],
+      "editRelations": [
+        "registeringSurvey"
+      ]
+    }
+  },
+  "type": "object",
+  "environment": "",
+  "tag": ""
+}
