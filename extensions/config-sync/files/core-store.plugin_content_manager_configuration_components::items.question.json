@@ -14,11 +14,7 @@
     "metadatas": {
       "id": {
         "edit": {},
-        "list": {
-          "label": "Id",
-          "searchable": false,
-          "sortable": false
-        }
+        "list": { "label": "Id", "searchable": false, "sortable": false }
       },
       "statement": {
         "edit": {
@@ -28,11 +24,7 @@
           "visible": true,
           "editable": true
         },
-        "list": {
-          "label": "Statement",
-          "searchable": true,
-          "sortable": true
-        }
+        "list": { "label": "Statement", "searchable": true, "sortable": true }
       },
       "answer": {
         "edit": {
@@ -42,11 +34,7 @@
           "visible": true,
           "editable": true
         },
-        "list": {
-          "label": "Answer",
-          "searchable": true,
-          "sortable": true
-        }
+        "list": { "label": "Answer", "searchable": true, "sortable": true }
       },
       "type": {
         "edit": {
@@ -56,32 +44,17 @@
           "visible": true,
           "editable": true
         },
-        "list": {
-          "label": "Type",
-          "searchable": true,
-          "sortable": true
-        }
+        "list": { "label": "Type", "searchable": true, "sortable": true }
       }
     },
     "layouts": {
       "list": ["id", "statement", "answer", "type"],
       "edit": [
         [
-          {
-            "name": "statement",
-            "size": 6
-          },
-          {
-            "name": "type",
-            "size": 6
-          }
+          { "name": "statement", "size": 6 },
+          { "name": "type", "size": 6 }
         ],
-        [
-          {
-            "name": "answer",
-            "size": 6
-          }
-        ]
+        [{ "name": "answer", "size": 6 }]
       ],
       "editRelations": []
     },

@@ -14,11 +14,7 @@
     "metadatas": {
       "id": {
         "edit": {},
-        "list": {
-          "label": "Id",
-          "searchable": false,
-          "sortable": false
-        }
+        "list": { "label": "Id", "searchable": false, "sortable": false }
       },
       "survey": {
         "edit": {
@@ -29,11 +25,7 @@
           "editable": true,
           "mainField": "title"
         },
-        "list": {
-          "label": "Survey",
-          "searchable": true,
-          "sortable": true
-        }
+        "list": { "label": "Survey", "searchable": true, "sortable": true }
       },
       "iterations": {
         "edit": {
@@ -43,11 +35,7 @@
           "visible": true,
           "editable": true
         },
-        "list": {
-          "label": "Iterations",
-          "searchable": true,
-          "sortable": true
-        }
+        "list": { "label": "Iterations", "searchable": true, "sortable": true }
       },
       "step": {
         "edit": {
@@ -57,36 +45,16 @@
           "visible": true,
           "editable": true
         },
-        "list": {
-          "label": "Step",
-          "searchable": true,
-          "sortable": true
-        }
+        "list": { "label": "Step", "searchable": true, "sortable": true }
       }
     },
     "layouts": {
-      "list": [
-        "id",
-        "survey",
-        "iterations",
-        "step"
-      ],
+      "list": ["id", "survey", "iterations", "step"],
       "edit": [
+        [{ "name": "survey", "size": 6 }],
         [
-          {
-            "name": "survey",
-            "size": 6
-          }
-        ],
-        [
-          {
-            "name": "iterations",
-            "size": 4
-          },
-          {
-            "name": "step",
-            "size": 4
-          }
+          { "name": "iterations", "size": 4 },
+          { "name": "step", "size": 4 }
         ]
       ],
       "editRelations": []

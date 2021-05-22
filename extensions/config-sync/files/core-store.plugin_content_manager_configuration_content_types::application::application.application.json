@@ -14,11 +14,7 @@
     "metadatas": {
       "id": {
         "edit": {},
-        "list": {
-          "label": "Id",
-          "searchable": true,
-          "sortable": true
-        }
+        "list": { "label": "Id", "searchable": true, "sortable": true }
       },
       "introductoryVideo": {
         "edit": {
@@ -29,7 +25,7 @@
           "editable": true
         },
         "list": {
-          "label": "IntroductoryVideo",
+          "label": "Introductory Video",
           "searchable": false,
           "sortable": false
         }
@@ -44,7 +40,7 @@
           "mainField": "title"
         },
         "list": {
-          "label": "RegisteringSurvey",
+          "label": "Registering Survey",
           "searchable": true,
           "sortable": true
         }
@@ -58,64 +54,39 @@
           "editable": true
         },
         "list": {
-          "label": "SurveySchedules",
+          "label": "Survey Schedules",
           "searchable": false,
           "sortable": false
         }
       },
       "createdAt": {
         "edit": {
-          "label": "CreatedAt",
+          "label": "Created At",
           "description": "",
           "placeholder": "",
           "visible": false,
           "editable": true
         },
-        "list": {
-          "label": "CreatedAt",
-          "searchable": true,
-          "sortable": true
-        }
+        "list": { "label": "Created At", "searchable": true, "sortable": true }
       },
       "updatedAt": {
         "edit": {
-          "label": "UpdatedAt",
+          "label": "Updated At",
           "description": "",
           "placeholder": "",
           "visible": false,
           "editable": true
         },
-        "list": {
-          "label": "UpdatedAt",
-          "searchable": true,
-          "sortable": true
-        }
+        "list": { "label": "Updated At", "searchable": true, "sortable": true }
       }
     },
     "layouts": {
-      "list": [
-        "id",
-        "introductoryVideo",
-        "createdAt",
-        "updatedAt"
-      ],
       "edit": [
-        [
-          {
-            "name": "introductoryVideo",
-            "size": 6
-          }
-        ],
-        [
-          {
-            "name": "surveySchedules",
-            "size": 12
-          }
-        ]
+        [{ "name": "introductoryVideo", "size": 6 }],
+        [{ "name": "surveySchedules", "size": 12 }]
       ],
-      "editRelations": [
-        "registeringSurvey"
-      ]
+      "editRelations": ["registeringSurvey"],
+      "list": ["id", "introductoryVideo", "createdAt", "updatedAt"]
     }
   },
   "type": "object",

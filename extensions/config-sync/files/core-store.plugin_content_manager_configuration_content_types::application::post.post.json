@@ -14,11 +14,7 @@
     "metadatas": {
       "id": {
         "edit": {},
-        "list": {
-          "label": "Id",
-          "searchable": true,
-          "sortable": true
-        }
+        "list": { "label": "Id", "searchable": true, "sortable": true }
       },
       "type": {
         "edit": {
@@ -28,11 +24,7 @@
           "visible": true,
           "editable": true
         },
-        "list": {
-          "label": "Type",
-          "searchable": true,
-          "sortable": true
-        }
+        "list": { "label": "Type", "searchable": true, "sortable": true }
       },
       "description": {
         "edit": {
@@ -56,11 +48,7 @@
           "visible": true,
           "editable": true
         },
-        "list": {
-          "label": "Gallery",
-          "searchable": false,
-          "sortable": false
-        }
+        "list": { "label": "Gallery", "searchable": false, "sortable": false }
       },
       "title": {
         "edit": {
@@ -70,71 +58,38 @@
           "visible": true,
           "editable": true
         },
-        "list": {
-          "label": "Title",
-          "searchable": true,
-          "sortable": true
-        }
+        "list": { "label": "Title", "searchable": true, "sortable": true }
       },
       "createdAt": {
         "edit": {
-          "label": "CreatedAt",
+          "label": "Created At",
           "description": "",
           "placeholder": "",
           "visible": false,
           "editable": true
         },
-        "list": {
-          "label": "CreatedAt",
-          "searchable": true,
-          "sortable": true
-        }
+        "list": { "label": "Created At", "searchable": true, "sortable": true }
       },
       "updatedAt": {
         "edit": {
-          "label": "UpdatedAt",
+          "label": "Updated At",
           "description": "",
           "placeholder": "",
           "visible": false,
           "editable": true
         },
-        "list": {
-          "label": "UpdatedAt",
-          "searchable": true,
-          "sortable": true
-        }
+        "list": { "label": "Updated At", "searchable": true, "sortable": true }
       }
     },
     "layouts": {
-      "list": [
-        "id",
-        "title",
-        "type",
-        "gallery"
-      ],
+      "list": ["id", "title", "type", "gallery", "createdAt"],
       "edit": [
         [
-          {
-            "name": "title",
-            "size": 6
-          },
-          {
-            "name": "type",
-            "size": 6
-          }
+          { "name": "title", "size": 6 },
+          { "name": "type", "size": 6 }
         ],
-        [
-          {
-            "name": "gallery",
-            "size": 6
-          }
-        ],
-        [
-          {
-            "name": "description",
-            "size": 12
-          }
-        ]
+        [{ "name": "gallery", "size": 6 }],
+        [{ "name": "description", "size": 12 }]
       ],
       "editRelations": []
     }
