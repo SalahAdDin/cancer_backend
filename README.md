@@ -38,6 +38,20 @@ To launch it:
 
 And, that's all.
 
+## Synchronizing settings
+
+By default, **Strapi** does not have a tool to migrate database between different environments, so, at any new instance of the back-end we need to manually recreate all settings and data we want to have on the back-end.
+
+Fortunately, for settings, we got a useful [package](https://github.com/boazpoolman/strapi-plugin-config-sync) that helps us to import settings manually:
+
+1. Go to `Panel > Plugins > Config Sync`.
+2. Make sure the changes from the configuration files are the same we aim to replicate on the current instance: in the list do click in every item with `Different` as **State**.
+3. After getting sure about changes, import them by clicking on the <kbd>Import</kbd> button.
+
+**Note:** In case you made changes we need to replicate in other instances, export them by clicking <kbd>Export</kbd> and push them to the repository.
+
+That's all.
+
 ## Testing the GraphQL API
 
 It is possible to test every **GraphQL** query and mutation with the [**GraphQL** _Playground_](https://www.apollographql.com/docs/apollo-server/testing/graphql-playground/) on [**Strapi**](https://strapi.io/documentation/developer-docs/latest/developer-resources/content-api/integrations/graphql.html#fetch-your-restaurant-collection-type), but just in developer mode.
