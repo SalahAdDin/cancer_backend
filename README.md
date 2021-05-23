@@ -23,8 +23,8 @@ To make things ready and easy, we also provide a compose file with a stack forme
 The folder structure must be:
 
 - **main** folder.
-  - `docker-compose.yaml`.
-  - **backend** folder (containing the **Strapi** project).
+- `docker-compose.yaml`.
+- **backend** folder (containing the **Strapi** project).
 
 To launch it:
 
