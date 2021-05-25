@@ -10,7 +10,7 @@
     "answer": {
       "type": "string",
       "required": true,
-      "minLength": 5,
+      "minLength": 1,
       "maxLength": 50
     },
     "statement": {
