@@ -14,5 +14,15 @@ module.exports = {
         console.log("Error after registering new user: ", error);
       }
     },
+    async beforeDelete(data) {
+      try {
+        const profile = await strapi.services.profile.findOne({
+          user: data.id,
+        });
+        await strapi.services.profile.delete({ id: profile.id });
+      } catch (error) {
+        console.log("Error before deleting a user: ", error);
+      }
+    },
   },
 };
