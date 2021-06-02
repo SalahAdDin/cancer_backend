@@ -1,6 +1,6 @@
 module.exports = ({ env }) => ({
   upload: {
-    provider: "aws-s3",
+    provider: "aws-s3-plus-cdn",
     providerOptions: {
       accessKeyId: env("AWS_ACCESS_KEY_ID"),
       secretAccessKey: env("AWS_ACCESS_SECRET"),
@@ -9,6 +9,7 @@ module.exports = ({ env }) => ({
         Bucket: env("AWS_BUCKET"),
         // StorageClass: env("AWS_S3_STORAGE_CLASSES"),
       },
+      cdnUrl: env("CDN_URL"),
       logger: console,
     },
   },
