@@ -19,6 +19,12 @@
       "type": "integer",
       "required": true,
       "min": 1
+    },
+    "label": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "minLength": 5
     }
   }
 }
