@@ -14,7 +14,11 @@
     "metadatas": {
       "id": {
         "edit": {},
-        "list": { "label": "Id", "searchable": false, "sortable": false }
+        "list": {
+          "label": "Id",
+          "searchable": false,
+          "sortable": false
+        }
       },
       "answer": {
         "edit": {
@@ -22,9 +26,13 @@
           "description": "",
           "placeholder": "",
           "visible": true,
-          "editable": true
+          "editable": false
         },
-        "list": { "label": "Answer", "searchable": true, "sortable": true }
+        "list": {
+          "label": "Answer",
+          "searchable": true,
+          "sortable": true
+        }
       },
       "statement": {
         "edit": {
@@ -32,17 +40,31 @@
           "description": "",
           "placeholder": "",
           "visible": true,
-          "editable": true
+          "editable": false
         },
-        "list": { "label": "Statement", "searchable": true, "sortable": true }
+        "list": {
+          "label": "Statement",
+          "searchable": true,
+          "sortable": true
+        }
       }
     },
     "layouts": {
-      "list": ["id", "answer", "statement"],
+      "list": [
+        "id",
+        "answer",
+        "statement"
+      ],
       "edit": [
         [
-          { "name": "statement", "size": 6 },
-          { "name": "answer", "size": 6 }
+          {
+            "name": "statement",
+            "size": 6
+          },
+          {
+            "name": "answer",
+            "size": 6
+          }
         ]
       ],
       "editRelations": []
