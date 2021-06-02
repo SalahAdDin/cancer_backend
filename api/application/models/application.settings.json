@@ -3,7 +3,7 @@
   "collectionName": "applications",
   "info": {
     "name": "Application",
-    "description": ""
+    "description": "Mobil uygulama için temel yapılandırma."
   },
   "options": {
     "increments": true,

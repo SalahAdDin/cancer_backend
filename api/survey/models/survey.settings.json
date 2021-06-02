@@ -3,14 +3,11 @@
   "collectionName": "surveys",
   "info": {
     "name": "Survey",
-    "description": ""
+    "description": "Anket"
   },
   "options": {
     "increments": true,
-    "timestamps": [
-      "createdAt",
-      "updatedAt"
-    ],
+    "timestamps": ["createdAt", "updatedAt"],
     "draftAndPublish": false
   },
   "pluginOptions": {

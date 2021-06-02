@@ -3,7 +3,7 @@
   "collectionName": "profiles",
   "info": {
     "name": "Profile",
-    "description": ""
+    "description": "Uygulama kullanıcı profili."
   },
   "options": {
     "increments": true,

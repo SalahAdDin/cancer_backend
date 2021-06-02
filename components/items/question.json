@@ -3,7 +3,7 @@
   "info": {
     "name": "Question",
     "icon": "question",
-    "description": ""
+    "description": "Anket sorusu."
   },
   "options": {},
   "attributes": {
@@ -20,13 +20,7 @@
     },
     "type": {
       "type": "enumeration",
-      "enum": [
-        "BOOL",
-        "MULTIPLE",
-        "OPEN_SHORT",
-        "OPEN_LONG",
-        "SINGLE"
-      ],
+      "enum": ["BOOL", "MULTIPLE", "OPEN_SHORT", "OPEN_LONG", "SINGLE"],
       "enumName": "QuestionType",
       "required": true,
       "default": "BOOL"

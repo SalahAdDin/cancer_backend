@@ -3,7 +3,7 @@
   "collectionName": "users-permissions_user",
   "info": {
     "name": "user",
-    "description": ""
+    "description": "Uygulama kullanıcı."
   },
   "options": {
     "draftAndPublish": false,

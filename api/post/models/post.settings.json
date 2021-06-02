@@ -3,7 +3,7 @@
   "collectionName": "posts",
   "info": {
     "name": "Post",
-    "description": ""
+    "description": "Uygulama içinde sunulacak içerikler."
   },
   "options": {
     "increments": true,

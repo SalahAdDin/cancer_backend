@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "results",
   "info": {
-    "name": "Result"
+    "name": "Result",
+    "description": "Kullanıcı anketlerinin sonuçları."
   },
   "options": {
     "increments": true,
