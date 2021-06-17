@@ -8,10 +8,10 @@
   "options": {},
   "attributes": {
     "answer": {
-      "type": "string",
+      "type": "text",
       "required": true,
       "minLength": 1,
-      "maxLength": 50
+      "maxLength": 500
     },
     "statement": {
       "type": "string",
