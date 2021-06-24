@@ -12,6 +12,28 @@
       "defaultSortOrder": "ASC"
     },
     "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "Id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "firstName": {
+        "edit": {
+          "label": "First Name",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "First Name",
+          "searchable": true,
+          "sortable": true
+        }
+      },
       "lastName": {
         "edit": {
           "label": "Last Name",
@@ -20,17 +42,26 @@
           "visible": true,
           "editable": true
         },
-        "list": { "label": "Last Name", "searchable": true, "sortable": true }
+        "list": {
+          "label": "Last Name",
+          "searchable": true,
+          "sortable": true
+        }
       },
-      "bio": {
+      "user": {
         "edit": {
-          "label": "Bio",
+          "label": "User",
           "description": "",
           "placeholder": "",
           "visible": true,
-          "editable": true
+          "editable": true,
+          "mainField": "username"
         },
-        "list": { "label": "Bio", "searchable": false, "sortable": false }
+        "list": {
+          "label": "User",
+          "searchable": true,
+          "sortable": true
+        }
       },
       "profilePhoto": {
         "edit": {
@@ -46,41 +77,6 @@
           "sortable": false
         }
       },
-      "createdAt": {
-        "edit": {
-          "label": "Created At",
-          "description": "",
-          "placeholder": "",
-          "visible": false,
-          "editable": true
-        },
-        "list": { "label": "Created At", "searchable": true, "sortable": true }
-      },
-      "user": {
-        "edit": {
-          "label": "User",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true,
-          "mainField": "username"
-        },
-        "list": { "label": "User", "searchable": true, "sortable": true }
-      },
-      "hasSeenTutorial": {
-        "edit": {
-          "label": "Has Seen Tutorial",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "Has Seen Tutorial",
-          "searchable": true,
-          "sortable": true
-        }
-      },
       "role": {
         "edit": {
           "label": "Role",
@@ -89,17 +85,11 @@
           "visible": true,
           "editable": true
         },
-        "list": { "label": "Role", "searchable": true, "sortable": true }
-      },
-      "updatedAt": {
-        "edit": {
-          "label": "Updated At",
-          "description": "",
-          "placeholder": "",
-          "visible": false,
-          "editable": true
-        },
-        "list": { "label": "Updated At", "searchable": true, "sortable": true }
+        "list": {
+          "label": "Role",
+          "searchable": true,
+          "sortable": true
+        }
       },
       "phoneNumber": {
         "edit": {
@@ -115,19 +105,19 @@
           "sortable": true
         }
       },
-      "id": {
-        "edit": {},
-        "list": { "label": "Id", "searchable": true, "sortable": true }
-      },
-      "firstName": {
+      "hasSeenTutorial": {
         "edit": {
-          "label": "First Name",
+          "label": "Has Seen Tutorial",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
-        "list": { "label": "First Name", "searchable": true, "sortable": true }
+        "list": {
+          "label": "Has Seen Tutorial",
+          "searchable": true,
+          "sortable": true
+        }
       },
       "hasSeenIntroductoryVideo": {
         "edit": {
@@ -142,26 +132,51 @@
           "searchable": true,
           "sortable": true
         }
+      },
+      "bio": {
+        "edit": {
+          "label": "Bio",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Bio",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "Created At",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "Created At",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "Updated At",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "Updated At",
+          "searchable": true,
+          "sortable": true
+        }
       }
     },
     "layouts": {
-      "edit": [
-        [
-          { "name": "firstName", "size": 6 },
-          { "name": "lastName", "size": 6 }
-        ],
-        [
-          { "name": "role", "size": 6 },
-          { "name": "phoneNumber", "size": 6 }
-        ],
-        [
-          { "name": "hasSeenTutorial", "size": 4 },
-          { "name": "hasSeenIntroductoryVideo", "size": 4 }
-        ],
-        [{ "name": "profilePhoto", "size": 6 }],
-        [{ "name": "bio", "size": 12 }]
-      ],
-      "editRelations": ["user"],
       "list": [
         "id",
         "profilePhoto",
@@ -173,6 +188,53 @@
         "createdAt",
         "hasSeenTutorial",
         "hasSeenIntroductoryVideo"
+      ],
+      "edit": [
+        [
+          {
+            "name": "firstName",
+            "size": 6
+          },
+          {
+            "name": "lastName",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "role",
+            "size": 6
+          },
+          {
+            "name": "phoneNumber",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "hasSeenTutorial",
+            "size": 4
+          },
+          {
+            "name": "hasSeenIntroductoryVideo",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "profilePhoto",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "bio",
+            "size": 12
+          }
+        ]
+      ],
+      "editRelations": [
+        "user"
       ]
     }
   },

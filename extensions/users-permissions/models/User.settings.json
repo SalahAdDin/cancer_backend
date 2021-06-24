@@ -67,8 +67,12 @@
       "model": "profile"
     },
     "surveyResults": {
-      "collection": "result",
-      "via": "user"
+      "via": "user",
+      "collection": "result"
+    },
+    "posts": {
+      "via": "author",
+      "collection": "post"
     }
   }
 }

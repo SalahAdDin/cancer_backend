@@ -35,7 +35,11 @@
           "editable": true,
           "mainField": "firstName"
         },
-        "list": { "label": "Profile", "searchable": true, "sortable": true }
+        "list": {
+          "label": "Profile",
+          "searchable": true,
+          "sortable": true
+        }
       },
       "blocked": {
         "edit": {
@@ -45,7 +49,11 @@
           "visible": true,
           "editable": true
         },
-        "list": { "label": "Blocked", "searchable": true, "sortable": true }
+        "list": {
+          "label": "Blocked",
+          "searchable": true,
+          "sortable": true
+        }
       },
       "updatedAt": {
         "edit": {
@@ -55,7 +63,11 @@
           "visible": false,
           "editable": true
         },
-        "list": { "label": "Updated At", "searchable": true, "sortable": true }
+        "list": {
+          "label": "Updated At",
+          "searchable": true,
+          "sortable": true
+        }
       },
       "resetPasswordToken": {
         "edit": {
@@ -79,7 +91,26 @@
           "visible": false,
           "editable": true
         },
-        "list": { "label": "Provider", "searchable": true, "sortable": true }
+        "list": {
+          "label": "Provider",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "posts": {
+        "edit": {
+          "label": "Posts",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "title"
+        },
+        "list": {
+          "label": "Posts",
+          "searchable": false,
+          "sortable": false
+        }
       },
       "role": {
         "edit": {
@@ -90,7 +121,11 @@
           "editable": true,
           "mainField": "name"
         },
-        "list": { "label": "Role", "searchable": true, "sortable": true }
+        "list": {
+          "label": "Role",
+          "searchable": true,
+          "sortable": true
+        }
       },
       "username": {
         "edit": {
@@ -100,11 +135,19 @@
           "visible": true,
           "editable": true
         },
-        "list": { "label": "Username", "searchable": true, "sortable": true }
+        "list": {
+          "label": "Username",
+          "searchable": true,
+          "sortable": true
+        }
       },
       "id": {
         "edit": {},
-        "list": { "label": "Id", "searchable": true, "sortable": true }
+        "list": {
+          "label": "Id",
+          "searchable": true,
+          "sortable": true
+        }
       },
       "createdAt": {
         "edit": {
@@ -114,7 +157,11 @@
           "visible": false,
           "editable": true
         },
-        "list": { "label": "Created At", "searchable": true, "sortable": true }
+        "list": {
+          "label": "Created At",
+          "searchable": true,
+          "sortable": true
+        }
       },
       "password": {
         "edit": {
@@ -124,7 +171,11 @@
           "visible": true,
           "editable": true
         },
-        "list": { "label": "Password", "searchable": true, "sortable": true }
+        "list": {
+          "label": "Password",
+          "searchable": true,
+          "sortable": true
+        }
       },
       "surveyResults": {
         "edit": {
@@ -149,7 +200,11 @@
           "visible": true,
           "editable": true
         },
-        "list": { "label": "Email", "searchable": true, "sortable": true }
+        "list": {
+          "label": "Email",
+          "searchable": true,
+          "sortable": true
+        }
       },
       "confirmed": {
         "edit": {
@@ -159,22 +214,48 @@
           "visible": true,
           "editable": true
         },
-        "list": { "label": "Confirmed", "searchable": true, "sortable": true }
+        "list": {
+          "label": "Confirmed",
+          "searchable": true,
+          "sortable": true
+        }
       }
     },
     "layouts": {
       "edit": [
         [
-          { "name": "username", "size": 6 },
-          { "name": "email", "size": 6 }
+          {
+            "name": "username",
+            "size": 6
+          },
+          {
+            "name": "email",
+            "size": 6
+          }
         ],
         [
-          { "name": "password", "size": 6 },
-          { "name": "confirmed", "size": 4 }
+          {
+            "name": "password",
+            "size": 6
+          },
+          {
+            "name": "confirmed",
+            "size": 4
+          }
         ],
-        [{ "name": "blocked", "size": 4 }]
+        [
+          {
+            "name": "blocked",
+            "size": 4
+          }
+        ]
       ],
-      "editRelations": ["role", "profile", "surveyResults"],
+      "editRelations": [
+        "role",
+        "profile",
+        "surveyResults",
+        "posts"
+      ],
       "list": [
         "id",
         "username",
@@ -182,7 +263,8 @@
         "profile",
         "confirmed",
         "createdAt",
-        "surveyResults"
+        "surveyResults",
+        "posts"
       ]
     }
   },

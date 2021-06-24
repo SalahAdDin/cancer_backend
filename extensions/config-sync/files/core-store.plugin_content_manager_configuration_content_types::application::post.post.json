@@ -14,7 +14,11 @@
     "metadatas": {
       "id": {
         "edit": {},
-        "list": { "label": "Id", "searchable": true, "sortable": true }
+        "list": {
+          "label": "Id",
+          "searchable": true,
+          "sortable": true
+        }
       },
       "type": {
         "edit": {
@@ -24,7 +28,11 @@
           "visible": true,
           "editable": true
         },
-        "list": { "label": "Type", "searchable": true, "sortable": true }
+        "list": {
+          "label": "Type",
+          "searchable": true,
+          "sortable": true
+        }
       },
       "description": {
         "edit": {
@@ -48,7 +56,11 @@
           "visible": true,
           "editable": true
         },
-        "list": { "label": "Gallery", "searchable": false, "sortable": false }
+        "list": {
+          "label": "Gallery",
+          "searchable": false,
+          "sortable": false
+        }
       },
       "title": {
         "edit": {
@@ -58,7 +70,26 @@
           "visible": true,
           "editable": true
         },
-        "list": { "label": "Title", "searchable": true, "sortable": true }
+        "list": {
+          "label": "Title",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "author": {
+        "edit": {
+          "label": "Author",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "username"
+        },
+        "list": {
+          "label": "Author",
+          "searchable": true,
+          "sortable": true
+        }
       },
       "createdAt": {
         "edit": {
@@ -68,7 +99,11 @@
           "visible": false,
           "editable": true
         },
-        "list": { "label": "Created At", "searchable": true, "sortable": true }
+        "list": {
+          "label": "Created At",
+          "searchable": true,
+          "sortable": true
+        }
       },
       "updatedAt": {
         "edit": {
@@ -78,20 +113,49 @@
           "visible": false,
           "editable": true
         },
-        "list": { "label": "Updated At", "searchable": true, "sortable": true }
+        "list": {
+          "label": "Updated At",
+          "searchable": true,
+          "sortable": true
+        }
       }
     },
     "layouts": {
-      "list": ["id", "title", "type", "gallery", "createdAt"],
       "edit": [
         [
-          { "name": "title", "size": 6 },
-          { "name": "type", "size": 6 }
+          {
+            "name": "title",
+            "size": 6
+          },
+          {
+            "name": "type",
+            "size": 6
+          }
         ],
-        [{ "name": "gallery", "size": 6 }],
-        [{ "name": "description", "size": 12 }]
+        [
+          {
+            "name": "gallery",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "description",
+            "size": 12
+          }
+        ]
       ],
-      "editRelations": []
+      "editRelations": [
+        "author"
+      ],
+      "list": [
+        "id",
+        "title",
+        "author",
+        "type",
+        "gallery",
+        "createdAt"
+      ]
     }
   },
   "type": "object",
