@@ -12,28 +12,6 @@
       "defaultSortOrder": "ASC"
     },
     "metadatas": {
-      "id": {
-        "edit": {},
-        "list": {
-          "label": "Id",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "firstName": {
-        "edit": {
-          "label": "First Name",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "First Name",
-          "searchable": true,
-          "sortable": true
-        }
-      },
       "lastName": {
         "edit": {
           "label": "Last Name",
@@ -46,6 +24,34 @@
           "label": "Last Name",
           "searchable": true,
           "sortable": true
+        }
+      },
+      "bio": {
+        "edit": {
+          "label": "Bio",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Bio",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "profilePhoto": {
+        "edit": {
+          "label": "Profile Photo",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Profile Photo",
+          "searchable": false,
+          "sortable": false
         }
       },
       "user": {
@@ -63,18 +69,46 @@
           "sortable": true
         }
       },
-      "profilePhoto": {
+      "updatedAt": {
         "edit": {
-          "label": "Profile Photo",
+          "label": "Updated At",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "Updated At",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "uid": {
+        "edit": {
+          "label": "UID",
+          "description": "Firebase User's id.",
+          "placeholder": "",
+          "visible": true,
+          "editable": false
+        },
+        "list": {
+          "label": "Uid",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "hasSeenTutorial": {
+        "edit": {
+          "label": "Has Seen Tutorial",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "Profile Photo",
-          "searchable": false,
-          "sortable": false
+          "label": "Tutorial",
+          "searchable": true,
+          "sortable": true
         }
       },
       "role": {
@@ -105,46 +139,12 @@
           "sortable": true
         }
       },
-      "hasSeenTutorial": {
-        "edit": {
-          "label": "Has Seen Tutorial",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
+      "id": {
+        "edit": {},
         "list": {
-          "label": "Has Seen Tutorial",
+          "label": "Id",
           "searchable": true,
           "sortable": true
-        }
-      },
-      "hasSeenIntroductoryVideo": {
-        "edit": {
-          "label": "Has Seen Introductory Video",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "Has Seen Introductory Video",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "bio": {
-        "edit": {
-          "label": "Bio",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "Bio",
-          "searchable": false,
-          "sortable": false
         }
       },
       "createdAt": {
@@ -161,34 +161,36 @@
           "sortable": true
         }
       },
-      "updatedAt": {
+      "firstName": {
         "edit": {
-          "label": "Updated At",
+          "label": "First Name",
           "description": "",
           "placeholder": "",
-          "visible": false,
+          "visible": true,
           "editable": true
         },
         "list": {
-          "label": "Updated At",
+          "label": "First Name",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "hasSeenIntroductoryVideo": {
+        "edit": {
+          "label": "Has Seen Introductory Video",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Introductory Video",
           "searchable": true,
           "sortable": true
         }
       }
     },
     "layouts": {
-      "list": [
-        "id",
-        "profilePhoto",
-        "firstName",
-        "lastName",
-        "user",
-        "role",
-        "phoneNumber",
-        "createdAt",
-        "hasSeenTutorial",
-        "hasSeenIntroductoryVideo"
-      ],
       "edit": [
         [
           {
@@ -202,11 +204,21 @@
         ],
         [
           {
-            "name": "role",
+            "name": "uid",
             "size": 6
           },
           {
+            "name": "role",
+            "size": 6
+          }
+        ],
+        [
+          {
             "name": "phoneNumber",
+            "size": 6
+          },
+          {
+            "name": "profilePhoto",
             "size": 6
           }
         ],
@@ -222,12 +234,6 @@
         ],
         [
           {
-            "name": "profilePhoto",
-            "size": 6
-          }
-        ],
-        [
-          {
             "name": "bio",
             "size": 12
           }
@@ -235,6 +241,18 @@
       ],
       "editRelations": [
         "user"
+      ],
+      "list": [
+        "id",
+        "profilePhoto",
+        "firstName",
+        "lastName",
+        "user",
+        "role",
+        "phoneNumber",
+        "createdAt",
+        "hasSeenTutorial",
+        "hasSeenIntroductoryVideo"
       ]
     }
   },
