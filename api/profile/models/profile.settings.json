@@ -55,7 +55,8 @@
       "type": "string",
       "minLength": 12,
       "maxLength": 16,
-      "unique": true
+      "unique": true,
+      "regex": "\\+\\d{12}$"
     },
     "hasSeenTutorial": {
       "type": "boolean",
@@ -70,6 +71,10 @@
       "type": "richtext",
       "minLength": 125,
       "maxLength": 350
+    },
+    "uid": {
+      "type": "string",
+      "unique": true
     }
   }
 }
