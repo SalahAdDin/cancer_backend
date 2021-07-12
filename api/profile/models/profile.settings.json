@@ -43,9 +43,10 @@
     "role": {
       "type": "enumeration",
       "enum": [
-        "PILOT",
         "TEST",
-        "CONTROL"
+        "PILOT",
+        "CONTROL",
+        "ADMIN"
       ],
       "default": "PILOT",
       "enumName": "UserRole",
