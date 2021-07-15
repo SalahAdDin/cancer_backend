@@ -55,9 +55,9 @@
     "phoneNumber": {
       "type": "string",
       "minLength": 12,
-      "maxLength": 16,
+      "maxLength": 24,
       "unique": true,
-      "regex": "\\+\\d{12}$"
+      "regex": "^([+]?[\\s0-9]+)?(\\d{3}|[(]?[0-9]+[)])?([-]?[\\s]?[0-9])+$"
     },
     "hasSeenTutorial": {
       "type": "boolean",
