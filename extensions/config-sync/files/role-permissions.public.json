@@ -267,7 +267,20 @@
           }
         }
       },
-      "information": {}
+      "information": {
+        "description": {
+          "short": "Quick way to see, edit and delete the data in your database.",
+          "long": "Quick way to see, edit and delete the data in your database."
+        },
+        "id": "content-manager",
+        "icon": "plug",
+        "logo": "https://raw.githubusercontent.com/strapi/strapi/master/packages/strapi-plugin-content-manager/admin/src/assets/images/logo.svg?sanitize=true",
+        "isCompatible": true,
+        "name": "Content Manager",
+        "price": 0,
+        "ratings": 5,
+        "registry": "https://registry.npmjs.org/"
+      }
     },
     "content-type-builder": {
       "controllers": {
@@ -338,7 +351,20 @@
           }
         }
       },
-      "information": {}
+      "information": {
+        "description": {
+          "short": "Modelize the data structure of your API.",
+          "long": "Modelize the data structure of your API. Create new fields and relations in just a minute. The files are automatically created and updated in your project."
+        },
+        "id": "content-type-builder",
+        "icon": "paint-brush",
+        "logo": "https://raw.githubusercontent.com/strapi/strapi/master/packages/strapi-plugin-content-type-builder/admin/src/assets/images/logo.svg?sanitize=true",
+        "isCompatible": true,
+        "name": "Content Type Builder",
+        "price": 0,
+        "ratings": 5,
+        "registry": "https://registry.npmjs.org/"
+      }
     },
     "email": {
       "controllers": {
@@ -357,7 +383,20 @@
           }
         }
       },
-      "information": {}
+      "information": {
+        "description": {
+          "short": "Send emails.",
+          "long": "Send emails."
+        },
+        "id": "email",
+        "icon": "paper-plane",
+        "logo": "https://raw.githubusercontent.com/strapi/strapi/master/packages/strapi-plugin-email/admin/src/assets/images/logo.svg?sanitize=true",
+        "isCompatible": true,
+        "name": "Email",
+        "price": 0,
+        "ratings": 5,
+        "registry": "https://registry.npmjs.org/"
+      }
     },
     "i18n": {
       "controllers": {
@@ -392,7 +431,20 @@
           }
         }
       },
-      "information": {}
+      "information": {
+        "description": {
+          "short": "This plugin enables to create, to read and to update content in different languages, both from the Admin Panel and from the API.",
+          "long": "This plugin enables to create, to read and to update content in different languages, both from the Admin Panel and from the API."
+        },
+        "id": "i18n",
+        "icon": "round-language",
+        "logo": "https://raw.githubusercontent.com/strapi/strapi/master/packages/strapi-plugin-i18n/admin/src/assets/images/logo.svg?sanitize=true",
+        "isCompatible": true,
+        "name": "Internationalization",
+        "price": 0,
+        "ratings": 5,
+        "registry": "https://registry.npmjs.org/"
+      }
     },
     "upload": {
       "controllers": {
@@ -431,7 +483,20 @@
           }
         }
       },
-      "information": {}
+      "information": {
+        "description": {
+          "short": "Media file management.",
+          "long": "Media file management."
+        },
+        "id": "upload",
+        "icon": "cloud-upload-alt",
+        "logo": "https://raw.githubusercontent.com/strapi/strapi/master/packages/strapi-plugin-upload/admin/src/assets/images/logo.svg?sanitize=true",
+        "isCompatible": true,
+        "name": "Media Library",
+        "price": 0,
+        "ratings": 5,
+        "registry": "https://registry.npmjs.org/"
+      }
     },
     "users-permissions": {
       "controllers": {
@@ -566,7 +631,20 @@
           }
         }
       },
-      "information": {}
+      "information": {
+        "description": {
+          "short": "Protect your API with a full authentication process based on JWT.",
+          "long": "Protect your API with a full authentication process based on JWT. This plugin comes also with an ACL strategy that allows you to manage the permissions between the groups of users."
+        },
+        "id": "users-permissions",
+        "icon": "users",
+        "logo": "https://raw.githubusercontent.com/strapi/strapi/master/packages/strapi-plugin-users-permissions/admin/src/assets/images/logo.svg?sanitize=true",
+        "isCompatible": true,
+        "name": "Roles & Permissions",
+        "price": 0,
+        "ratings": 5,
+        "registry": "https://registry.npmjs.org/"
+      }
     }
   }
 }

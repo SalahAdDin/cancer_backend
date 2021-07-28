@@ -14,7 +14,11 @@
     "metadatas": {
       "id": {
         "edit": {},
-        "list": { "label": "Id", "searchable": true, "sortable": true }
+        "list": {
+          "label": "Id",
+          "searchable": true,
+          "sortable": true
+        }
       },
       "iteration": {
         "edit": {
@@ -24,7 +28,11 @@
           "visible": true,
           "editable": true
         },
-        "list": { "label": "Iteration", "searchable": true, "sortable": true }
+        "list": {
+          "label": "Iteration",
+          "searchable": true,
+          "sortable": true
+        }
       },
       "answers": {
         "edit": {
@@ -34,7 +42,11 @@
           "visible": true,
           "editable": true
         },
-        "list": { "label": "Answers", "searchable": false, "sortable": false }
+        "list": {
+          "label": "Answers",
+          "searchable": false,
+          "sortable": false
+        }
       },
       "user": {
         "edit": {
@@ -45,7 +57,11 @@
           "editable": true,
           "mainField": "username"
         },
-        "list": { "label": "User", "searchable": true, "sortable": true }
+        "list": {
+          "label": "User",
+          "searchable": true,
+          "sortable": true
+        }
       },
       "survey": {
         "edit": {
@@ -56,7 +72,11 @@
           "editable": true,
           "mainField": "title"
         },
-        "list": { "label": "Survey", "searchable": true, "sortable": true }
+        "list": {
+          "label": "Survey",
+          "searchable": true,
+          "sortable": true
+        }
       },
       "createdAt": {
         "edit": {
@@ -66,7 +86,11 @@
           "visible": false,
           "editable": true
         },
-        "list": { "label": "Created At", "searchable": true, "sortable": true }
+        "list": {
+          "label": "Created At",
+          "searchable": true,
+          "sortable": true
+        }
       },
       "updatedAt": {
         "edit": {
@@ -76,16 +100,40 @@
           "visible": false,
           "editable": true
         },
-        "list": { "label": "Updated At", "searchable": true, "sortable": true }
+        "list": {
+          "label": "Updated At",
+          "searchable": true,
+          "sortable": true
+        }
       }
     },
     "layouts": {
       "edit": [
-        [{ "name": "iteration", "size": 4 }],
-        [{ "name": "answers", "size": 12 }]
+        [
+          {
+            "name": "iteration",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "answers",
+            "size": 12
+          }
+        ]
       ],
-      "editRelations": ["user", "survey"],
-      "list": ["id", "iteration", "createdAt", "updatedAt", "user", "survey"]
+      "editRelations": [
+        "user",
+        "survey"
+      ],
+      "list": [
+        "id",
+        "iteration",
+        "createdAt",
+        "updatedAt",
+        "user",
+        "survey"
+      ]
     }
   },
   "type": "object",

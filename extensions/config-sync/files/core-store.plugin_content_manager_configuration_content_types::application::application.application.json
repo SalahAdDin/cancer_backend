@@ -14,7 +14,11 @@
     "metadatas": {
       "id": {
         "edit": {},
-        "list": { "label": "Id", "searchable": true, "sortable": true }
+        "list": {
+          "label": "Id",
+          "searchable": true,
+          "sortable": true
+        }
       },
       "introductoryVideo": {
         "edit": {
@@ -67,7 +71,11 @@
           "visible": false,
           "editable": true
         },
-        "list": { "label": "Created At", "searchable": true, "sortable": true }
+        "list": {
+          "label": "Created At",
+          "searchable": true,
+          "sortable": true
+        }
       },
       "updatedAt": {
         "edit": {
@@ -77,16 +85,37 @@
           "visible": false,
           "editable": true
         },
-        "list": { "label": "Updated At", "searchable": true, "sortable": true }
+        "list": {
+          "label": "Updated At",
+          "searchable": true,
+          "sortable": true
+        }
       }
     },
     "layouts": {
-      "edit": [
-        [{ "name": "introductoryVideo", "size": 6 }],
-        [{ "name": "surveySchedules", "size": 12 }]
+      "list": [
+        "id",
+        "introductoryVideo",
+        "createdAt",
+        "updatedAt"
       ],
-      "editRelations": ["registeringSurvey"],
-      "list": ["id", "introductoryVideo", "createdAt", "updatedAt"]
+      "edit": [
+        [
+          {
+            "name": "introductoryVideo",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "surveySchedules",
+            "size": 12
+          }
+        ]
+      ],
+      "editRelations": [
+        "registeringSurvey"
+      ]
     }
   },
   "type": "object",
