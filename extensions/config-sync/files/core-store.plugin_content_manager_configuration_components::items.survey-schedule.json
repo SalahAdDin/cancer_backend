@@ -16,8 +16,8 @@
         "edit": {},
         "list": {
           "label": "Id",
-          "searchable": false,
-          "sortable": false
+          "searchable": true,
+          "sortable": true
         }
       },
       "survey": {
@@ -39,7 +39,7 @@
         "edit": {
           "label": "Iterations",
           "description": "Anket kaç kez alınabilir?",
-          "placeholder": "üç kere",
+          "placeholder": "3",
           "visible": true,
           "editable": true
         },
@@ -53,7 +53,7 @@
         "edit": {
           "label": "Step",
           "description": "Anketin her bir tekrarı arasında kaç hafta geçmelidir?",
-          "placeholder": "bir hafta",
+          "placeholder": "1",
           "visible": true,
           "editable": true
         },
@@ -85,6 +85,7 @@
         "iterations",
         "step"
       ],
+      "editRelations": [],
       "edit": [
         [
           {
@@ -98,16 +99,15 @@
         ],
         [
           {
-            "name": "iterations",
+            "name": "step",
             "size": 4
           },
           {
-            "name": "step",
+            "name": "iterations",
             "size": 4
           }
         ]
-      ],
-      "editRelations": []
+      ]
     },
     "isComponent": true
   },

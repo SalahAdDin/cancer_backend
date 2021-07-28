@@ -93,7 +93,7 @@
       },
       "createdAt": {
         "edit": {
-          "label": "Created At",
+          "label": "CreatedAt",
           "description": "",
           "placeholder": "",
           "visible": false,
@@ -107,14 +107,14 @@
       },
       "updatedAt": {
         "edit": {
-          "label": "Updated At",
+          "label": "UpdatedAt",
           "description": "",
           "placeholder": "",
           "visible": false,
           "editable": true
         },
         "list": {
-          "label": "Updated At",
+          "label": "UpdatedAt",
           "searchable": true,
           "sortable": true
         }
@@ -124,11 +124,11 @@
       "edit": [
         [
           {
-            "name": "title",
+            "name": "type",
             "size": 6
           },
           {
-            "name": "type",
+            "name": "title",
             "size": 6
           }
         ],

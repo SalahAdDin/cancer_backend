@@ -36,7 +36,7 @@
       },
       "intro": {
         "edit": {
-          "label": "Intro",
+          "label": "Introduction",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -79,7 +79,7 @@
       },
       "createdAt": {
         "edit": {
-          "label": "Created At",
+          "label": "CreatedAt",
           "description": "",
           "placeholder": "",
           "visible": false,
@@ -93,26 +93,20 @@
       },
       "updatedAt": {
         "edit": {
-          "label": "Updated At",
+          "label": "UpdatedAt",
           "description": "",
           "placeholder": "",
           "visible": false,
           "editable": true
         },
         "list": {
-          "label": "Updated At",
+          "label": "UpdatedAt",
           "searchable": true,
           "sortable": true
         }
       }
     },
     "layouts": {
-      "list": [
-        "id",
-        "title",
-        "results",
-        "createdAt"
-      ],
       "edit": [
         [
           {
@@ -135,6 +129,12 @@
       ],
       "editRelations": [
         "results"
+      ],
+      "list": [
+        "id",
+        "title",
+        "results",
+        "createdAt"
       ]
     }
   },

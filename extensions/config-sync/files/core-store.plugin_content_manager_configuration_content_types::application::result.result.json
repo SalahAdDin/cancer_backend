@@ -80,7 +80,7 @@
       },
       "createdAt": {
         "edit": {
-          "label": "Created At",
+          "label": "CreatedAt",
           "description": "",
           "placeholder": "",
           "visible": false,
@@ -94,14 +94,14 @@
       },
       "updatedAt": {
         "edit": {
-          "label": "Updated At",
+          "label": "UpdatedAt",
           "description": "",
           "placeholder": "",
           "visible": false,
           "editable": true
         },
         "list": {
-          "label": "Updated At",
+          "label": "UpdatedAt",
           "searchable": true,
           "sortable": true
         }
@@ -129,10 +129,9 @@
       "list": [
         "id",
         "iteration",
-        "createdAt",
-        "updatedAt",
         "user",
-        "survey"
+        "survey",
+        "createdAt"
       ]
     }
   },

@@ -8,7 +8,7 @@
       "searchable": true,
       "pageSize": 10,
       "mainField": "statement",
-      "defaultSortBy": "answer",
+      "defaultSortBy": "statement",
       "defaultSortOrder": "ASC"
     },
     "metadatas": {
@@ -16,8 +16,8 @@
         "edit": {},
         "list": {
           "label": "Id",
-          "searchable": false,
-          "sortable": false
+          "searchable": true,
+          "sortable": true
         }
       },
       "answer": {
@@ -55,6 +55,7 @@
         "answer",
         "statement"
       ],
+      "editRelations": [],
       "edit": [
         [
           {
@@ -66,8 +67,7 @@
             "size": 6
           }
         ]
-      ],
-      "editRelations": []
+      ]
     },
     "isComponent": true
   },

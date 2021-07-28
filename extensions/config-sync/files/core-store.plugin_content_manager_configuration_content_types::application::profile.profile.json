@@ -8,7 +8,7 @@
       "searchable": true,
       "pageSize": 20,
       "mainField": "firstName",
-      "defaultSortBy": "phoneNumber",
+      "defaultSortBy": "lastName",
       "defaultSortOrder": "ASC"
     },
     "metadatas": {
@@ -28,7 +28,7 @@
       },
       "bio": {
         "edit": {
-          "label": "Bio",
+          "label": "Biography",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -71,14 +71,14 @@
       },
       "updatedAt": {
         "edit": {
-          "label": "Updated At",
+          "label": "UpdatedAt",
           "description": "",
           "placeholder": "",
           "visible": false,
           "editable": true
         },
         "list": {
-          "label": "Updated At",
+          "label": "UpdatedAt",
           "searchable": true,
           "sortable": true
         }
@@ -149,7 +149,7 @@
       },
       "createdAt": {
         "edit": {
-          "label": "Created At",
+          "label": "CreatedAt",
           "description": "",
           "placeholder": "",
           "visible": false,
@@ -204,19 +204,15 @@
         ],
         [
           {
-            "name": "uid",
+            "name": "role",
             "size": 6
           },
           {
-            "name": "role",
+            "name": "phoneNumber",
             "size": 6
           }
         ],
         [
-          {
-            "name": "phoneNumber",
-            "size": 6
-          },
           {
             "name": "profilePhoto",
             "size": 6
@@ -230,6 +226,12 @@
           {
             "name": "hasSeenIntroductoryVideo",
             "size": 4
+          }
+        ],
+        [
+          {
+            "name": "uid",
+            "size": 6
           }
         ],
         [
@@ -251,8 +253,8 @@
         "role",
         "phoneNumber",
         "createdAt",
-        "hasSeenTutorial",
-        "hasSeenIntroductoryVideo"
+        "hasSeenIntroductoryVideo",
+        "hasSeenTutorial"
       ]
     }
   },

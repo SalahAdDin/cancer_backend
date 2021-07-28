@@ -29,7 +29,7 @@
           "editable": true
         },
         "list": {
-          "label": "Introductory Video",
+          "label": "IntroductoryVideo",
           "searchable": false,
           "sortable": false
         }
@@ -37,14 +37,14 @@
       "registeringSurvey": {
         "edit": {
           "label": "Registering Survey",
-          "description": "Kayıt olurken hangi anket doldurulmalıdır?",
+          "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true,
           "mainField": "title"
         },
         "list": {
-          "label": "Registering Survey",
+          "label": "RegisteringSurvey",
           "searchable": true,
           "sortable": true
         }
@@ -58,47 +58,41 @@
           "editable": true
         },
         "list": {
-          "label": "Survey Schedules",
+          "label": "SurveySchedules",
           "searchable": false,
           "sortable": false
         }
       },
       "createdAt": {
         "edit": {
-          "label": "Created At",
+          "label": "CreatedAt",
           "description": "",
           "placeholder": "",
           "visible": false,
           "editable": true
         },
         "list": {
-          "label": "Created At",
+          "label": "CreatedAt",
           "searchable": true,
           "sortable": true
         }
       },
       "updatedAt": {
         "edit": {
-          "label": "Updated At",
+          "label": "UpdatedAt",
           "description": "",
           "placeholder": "",
           "visible": false,
           "editable": true
         },
         "list": {
-          "label": "Updated At",
+          "label": "UpdatedAt",
           "searchable": true,
           "sortable": true
         }
       }
     },
     "layouts": {
-      "list": [
-        "id",
-        "introductoryVideo",
-        "createdAt",
-        "updatedAt"
-      ],
       "edit": [
         [
           {
@@ -115,6 +109,12 @@
       ],
       "editRelations": [
         "registeringSurvey"
+      ],
+      "list": [
+        "id",
+        "introductoryVideo",
+        "registeringSurvey",
+        "createdAt"
       ]
     }
   },

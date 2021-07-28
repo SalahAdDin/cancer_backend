@@ -16,8 +16,8 @@
         "edit": {},
         "list": {
           "label": "Id",
-          "searchable": false,
-          "sortable": false
+          "searchable": true,
+          "sortable": true
         }
       },
       "statement": {
@@ -70,6 +70,7 @@
         "answer",
         "type"
       ],
+      "editRelations": [],
       "edit": [
         [
           {
@@ -87,8 +88,7 @@
             "size": 6
           }
         ]
-      ],
-      "editRelations": []
+      ]
     },
     "isComponent": true
   },
