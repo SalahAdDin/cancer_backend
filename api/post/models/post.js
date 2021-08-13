@@ -16,10 +16,5 @@ module.exports = {
         throw strapi.errors.badRequest("This post needs an author.");
       }
     },
-    async beforeUpdate(params, data) {
-      if (data.author == null) {
-        throw strapi.errors.badRequest("This post needs an author.");
-      }
-    },
   },
 };
