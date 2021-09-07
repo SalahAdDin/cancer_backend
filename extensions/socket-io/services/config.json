@@ -1,0 +1,6 @@
+{
+	"routes": [
+		{ "apiName": "Post" },
+		{ "apiName": "users" }
+	]
+}
