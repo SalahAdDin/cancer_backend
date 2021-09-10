@@ -53,7 +53,7 @@ module.exports = {
           }
         );
       } catch (error) {
-        console.log("Error before deleting a user: ", error);
+        console.log("Error after deleting a user: ", error);
       }
     },
     async beforeDelete(data) {
