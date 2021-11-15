@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_items_introductory_videos",
+  "info": {
+    "name": "IntroductoryVideo",
+    "icon": "file-video"
+  },
+  "options": {},
+  "attributes": {
+    "role": {
+      "type": "enumeration",
+      "enum": [
+        "TEST",
+        "PILOT",
+        "CONTROL",
+        "ADMIN"
+      ],
+      "required": true,
+      "default": "CONTROL",
+      "unique": true
+    },
+    "video": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    }
+  }
+}

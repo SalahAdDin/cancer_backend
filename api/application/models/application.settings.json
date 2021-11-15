@@ -7,7 +7,10 @@
   },
   "options": {
     "increments": true,
-    "timestamps": ["createdAt", "updatedAt"],
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ],
     "draftAndPublish": false
   },
   "pluginOptions": {
@@ -16,18 +19,6 @@
     }
   },
   "attributes": {
-    "introductoryVideo": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": ["videos"],
-      "plugin": "upload",
-      "required": true,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
     "registeringSurvey": {
       "unique": true,
       "model": "survey"
@@ -41,6 +32,17 @@
         }
       },
       "component": "items.survey-schedule"
+    },
+    "introductoryVideo": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "component": "items.introductory-video",
+      "required": true
     }
   }
 }
