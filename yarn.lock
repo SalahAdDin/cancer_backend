@@ -10656,7 +10656,7 @@ strapi-plugin-i18n@3.6.8:
     pluralize "8.0.0"
     strapi-utils "3.6.8"
 
-strapi-plugin-socket-io@^2.1.0:
+strapi-plugin-socket-io@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/strapi-plugin-socket-io/-/strapi-plugin-socket-io-2.1.1.tgz#f4eba803a066837688989343dd70e79b3becf074"
   integrity sha512-kepmBSm50yGl3Ktg5cnlMFLEZdZfTFozFp+D4tNBbKeS3PHrGGXxSWOWrOySS5icfu9PssoFF38uGfRTHpCBqg==
