@@ -25,6 +25,17 @@
       "required": true,
       "unique": true,
       "minLength": 4
+    },
+    "role": {
+      "type": "enumeration",
+      "enum": [
+        "TEST",
+        "PILOT",
+        "CONTROL",
+        "ALL"
+      ],
+      "required": true,
+      "default": "ALL"
     }
   }
 }

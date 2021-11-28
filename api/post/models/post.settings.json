@@ -51,6 +51,7 @@
       "collection": "file",
       "via": "related",
       "allowedTypes": [
+        "files",
         "images",
         "videos"
       ],
@@ -69,8 +70,7 @@
         }
       },
       "type": "string",
-      "minLength": 10,
-      "maxLength": 25
+      "minLength": 10
     },
     "author": {
       "plugin": "users-permissions",
