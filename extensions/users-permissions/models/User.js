@@ -43,6 +43,11 @@ module.exports = {
       };
 
       try {
+        const profile = await strapi.services.profile.findOne({
+          user: result.id,
+        });
+        await strapi.services.profile.delete({ id: profile.id });
+
         await strapi.plugins["email"].services.email.sendTemplatedEmail(
           {
             to: result.email,
@@ -54,16 +59,6 @@ module.exports = {
         );
       } catch (error) {
         console.log("Error after deleting a user: ", error);
-      }
-    },
-    async beforeDelete(data) {
-      try {
-        const profile = await strapi.services.profile.findOne({
-          user: data.id,
-        });
-        await strapi.services.profile.delete({ id: profile.id });
-      } catch (error) {
-        console.log("Error before deleting a user: ", error);
       }
     },
     async afterUpdate(result, params, data) {
