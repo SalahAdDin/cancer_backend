@@ -43,18 +43,19 @@ module.exports = {
       };
 
       try {
+        const deletedUser = result[0];
         const profile = await strapi.services.profile.findOne({
-          user: result.id,
+          user: deletedUser.id,
         });
         await strapi.services.profile.delete({ id: profile.id });
 
         await strapi.plugins["email"].services.email.sendTemplatedEmail(
           {
-            to: result.email,
+            to: deletedUser.email,
           },
           emailTemplate,
           {
-            user: { username: result.username, email: result.email },
+            user: { username: deletedUser.username, email: deletedUser.email },
           }
         );
       } catch (error) {
