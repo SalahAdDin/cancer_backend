@@ -1,6 +1,7 @@
 {
-	"routes": [
-		{ "apiName": "post" },
-		{ "apiName": "user" }
-	]
+  "routes": [
+    { "apiName": "post" },
+    { "apiName": "user" },
+    { "apiName": "application" }
+  ]
 }
