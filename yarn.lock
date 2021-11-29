@@ -10656,13 +10656,13 @@ strapi-plugin-i18n@3.6.8:
     pluralize "8.0.0"
     strapi-utils "3.6.8"
 
-strapi-plugin-socket-io@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/strapi-plugin-socket-io/-/strapi-plugin-socket-io-2.1.1.tgz#f4eba803a066837688989343dd70e79b3becf074"
-  integrity sha512-kepmBSm50yGl3Ktg5cnlMFLEZdZfTFozFp+D4tNBbKeS3PHrGGXxSWOWrOySS5icfu9PssoFF38uGfRTHpCBqg==
+strapi-plugin-socket-io@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/strapi-plugin-socket-io/-/strapi-plugin-socket-io-2.1.2.tgz#76d95f288a4a38a1224ba251e0aecb1ac39a59a3"
+  integrity sha512-akXJOKNQc46b22W9kyz2QkmdXGHD0XRMEu2dcgFYyIVz1e8WZrmXA3IikQ5v9fNhvDmof/65+Kgg8tuEumBEZg==
   dependencies:
     strapi-utils "^3.6.8"
-    strapio "^2.3.2"
+    strapio "^2.4.5"
 
 strapi-plugin-upload@3.6.8:
   version "3.6.8"
@@ -10830,10 +10830,10 @@ strapi@3.6.8:
     strapi-generate-service "3.6.8"
     strapi-utils "3.6.8"
 
-strapio@^2.3.2:
-  version "2.4.2"
-  resolved "https://registry.yarnpkg.com/strapio/-/strapio-2.4.2.tgz#597b328081fe5095bcb749e37c9ee115679aa2ac"
-  integrity sha512-ododo29EmMIUgrdnwOZDDcAk2Lzr+3pVc5L/zJ5F9TKzkWHm+Gmdx9d52UKP8dUoaEdaGXY2zfCSB6yN//F50w==
+strapio@^2.4.5:
+  version "2.4.5"
+  resolved "https://registry.yarnpkg.com/strapio/-/strapio-2.4.5.tgz#2f51a9dfd5e07ce69babe4c268632542e0b91d97"
+  integrity sha512-nV0xGH7hKvuIreRKJXFsZZNBCs9v282ckV+HRXVgoSWxOuNBivmQei7Z+/ERL0VJzp4bwd8w2gPYCRUs8B+rSQ==
   dependencies:
     socket.io "^4.1.2"
 
