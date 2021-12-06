@@ -14,13 +14,18 @@
       "required": true
     },
     "answer": {
-      "type": "string",
-      "minLength": 5,
-      "maxLength": 150
+      "type": "text",
+      "minLength": 4
     },
     "type": {
       "type": "enumeration",
-      "enum": ["BOOL", "MULTIPLE", "OPEN_SHORT", "OPEN_LONG", "SINGLE"],
+      "enum": [
+        "BOOL",
+        "MULTIPLE",
+        "OPEN_SHORT",
+        "OPEN_LONG",
+        "SINGLE"
+      ],
       "enumName": "QuestionType",
       "required": true,
       "default": "BOOL"
