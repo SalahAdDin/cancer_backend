@@ -1,16 +1,14 @@
 module.exports = ({ env }) => ({
   upload: {
-    provider: "aws-s3-plus-cdn",
+    provider: "cloudinary",
     providerOptions: {
-      accessKeyId: env("AWS_ACCESS_KEY_ID"),
-      secretAccessKey: env("AWS_ACCESS_SECRET"),
-      region: env("AWS_REGION"),
-      params: {
-        Bucket: env("AWS_BUCKET"),
-        // StorageClass: env("AWS_S3_STORAGE_CLASSES"),
-      },
-      cdnUrl: env("CDN_URL"),
-      logger: console,
+      cloud_name: env("CLOUDINARY_NAME"),
+      api_key: env("CLOUDINARY_KEY"),
+      api_secret: env("CLOUDINARY_SECRET"),
+    },
+    actionOptions: {
+      upload: {},
+      delete: {},
     },
   },
   graphql: {
@@ -24,11 +22,9 @@ module.exports = ({ env }) => ({
     },
   },
   email: {
-    provider: "amazon-ses",
+    provider: "mailgun",
     providerOptions: {
-      key: env("AWS_ACCESS_KEY_ID"),
-      secret: env("AWS_ACCESS_SECRET"),
-      amazon: `https://email.${env("AWS_REGION")}.amazonaws.com`,
+      apiKey: env("MAILGUN_API_KEY"),
     },
     settings: {
       defaultFrom: env("EMAIL_DEFAULT_FROM"),
