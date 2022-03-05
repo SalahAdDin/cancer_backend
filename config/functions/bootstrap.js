@@ -1,5 +1,6 @@
-'use strict';
-
+"use strict";
+const admin = require("firebase-admin");
+const serviceAccount = require("../../serviceAccountKey.json");
 /**
  * An asynchronous bootstrap function that runs before
  * your application gets started.
@@ -10,4 +11,9 @@
  * See more details here: https://strapi.io/documentation/developer-docs/latest/setup-deployment-guides/configurations.html#bootstrap
  */
 
-module.exports = () => {};
+module.exports = async () => {
+  admin.initializeApp({
+    credential: admin.credential.cert(serviceAccount),
+  });
+  strapi.firebase = admin;
+};
