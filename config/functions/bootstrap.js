@@ -1,6 +1,7 @@
 "use strict";
 const admin = require("firebase-admin");
 const serviceAccount = require("../../serviceAccountKey.json");
+
 /**
  * An asynchronous bootstrap function that runs before
  * your application gets started.
