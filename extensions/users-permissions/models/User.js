@@ -49,7 +49,7 @@ module.exports = {
         const profileId = deletedUser.profile.id;
         const uid = deletedUser.profile.uid;
         await strapi.services.profile.delete({ id: profileId });
-        await strapi.firebase.auth().deletedUser(uid);
+        await strapi.firebase.auth().deleteUser(uid);
 
         await strapi.plugins["email"].services.email.sendTemplatedEmail(
           {
