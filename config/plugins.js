@@ -22,9 +22,9 @@ module.exports = ({ env }) => ({
     },
   },
   email: {
-    provider: "mailgun",
+    provider: "sendgrid",
     providerOptions: {
-      apiKey: env("MAILGUN_API_KEY"),
+      apiKey: env("SENDGRID_API_KEY"),
     },
     settings: {
       defaultFrom: env("EMAIL_DEFAULT_FROM"),
