@@ -5,6 +5,9 @@ const { sendNotificationToDevice } = require("../../../utils/notifications");
 module.exports = {
   lifecycles: {
     async afterCreate(result, data) {
+      const { id, email, username } = result;
+      const title = `New registered user: ${username}`;
+      const body = `A new user registered with ${email} is waiting for your confirmation.`;
       const emailTemplate = {
         subject: "New registered user: <%= user.username %>",
         text: `New User Registered!
@@ -15,12 +18,13 @@ module.exports = {
 
       try {
         await strapi.services.profile.create({
-          user: result.id,
+          user: id,
         });
         await strapi
           .query("user", "users-permissions")
-          .update({ id: result.id }, { confirmed: false });
+          .update({ id }, { confirmed: false });
         const admins = await strapi.query("user", "admin").findOne({ id: 1 });
+
         await strapi.plugins["email"].services.email.sendTemplatedEmail(
           {
             // First admin user should be the main one, at first.
@@ -28,9 +32,23 @@ module.exports = {
           },
           emailTemplate,
           {
-            user: { username: result.username, email: result.email },
+            user: { username, email },
           }
         );
+
+        await sendNotificationToTopic({
+          topic: "admins",
+          data: {
+            title,
+            body,
+            type: "NEW_USER_REGISTERED",
+            data: { id },
+          },
+          notification: {
+            title,
+            body,
+          },
+        });
       } catch (error) {
         console.log("Error after registering new user: ", error);
       }
@@ -45,19 +63,18 @@ module.exports = {
       };
 
       try {
-        const deletedUser = result[0];
-        const profileId = deletedUser.profile.id;
-        const uid = deletedUser.profile.uid;
-        await strapi.services.profile.delete({ id: profileId });
+        const { email, profile, username } = result[0];
+        const { id, uid } = profile;
+        await strapi.services.profile.delete({ id });
         await strapi.firebase.auth().deleteUser(uid);
 
         await strapi.plugins["email"].services.email.sendTemplatedEmail(
           {
-            to: deletedUser.email,
+            to: email,
           },
           emailTemplate,
           {
-            user: { username: deletedUser.username, email: deletedUser.email },
+            user: { username, email },
           }
         );
       } catch (error) {
@@ -72,20 +89,28 @@ module.exports = {
         html: `<h1>Welcome on JineOnkolojik Destek !</h1>
           <p>Your account is now confirmed with: <%= user.email %>.<p>`,
       };
-      const { email, username } = result;
+      const { confirmed, email, profile, username } = result;
 
       try {
         // This is supposed to occur once.
-        if (result.confirmed === true) {
-          const { token } = result.profile;
+        if (confirmed === true) {
+          const { token } = profile;
 
-          console.log("result profile: ", result.profile);
+          console.log("Result profile: ", profile);
+
+          const title = `Welcome ${username}!`;
+          const body = `Your account is confirmed with: ${email}.`;
 
           await sendNotificationToDevice({
             token,
+            data: {
+              title,
+              body,
+              type: "USER_CONFIRMED",
+            },
             notification: {
-              title: `Welcome ${username}!`,
-              body: `Your account is confirmed with: ${email}.`,
+              title,
+              body,
             },
           });
 

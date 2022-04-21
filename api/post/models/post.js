@@ -19,19 +19,26 @@ module.exports = {
     },
     async afterCreate(result, data) {
       const { type, author, title } = result;
+      const body = `${author.username} has published a new post for ${type}!`;
       try {
         await sendNotificationToTopic({
           topic: "posts",
           data: {
-            type,
+            title,
+            body,
+            type: "NEW_POST",
+            data: { type, author: author.username },
           },
           notification: {
             title,
-            body: `${author} has published a new post for ${type}!`,
+            body,
           },
         });
       } catch (error) {
-        console.log("Error after sending a push notification: ", error);
+        console.log(
+          "Error after sending a push notification for Posts: ",
+          error
+        );
       }
     },
   },
