@@ -22,9 +22,14 @@ module.exports = ({ env }) => ({
     },
   },
   email: {
-    provider: "sendgrid",
+    provider: env("EMAIL_PROVIDER"),
     providerOptions: {
-      apiKey: env("SENDGRID_API_KEY"),
+      host: env("EMAIL_SMTP_HOST", "smtp.example.com"),
+      port: env("EMAIL_SMTP_PORT", 587),
+      auth: {
+        user: env("EMAIL_SMTP_USER"),
+        pass: env("EMAIL_SMTP_PASS"),
+      },
     },
     settings: {
       defaultFrom: env("EMAIL_DEFAULT_FROM"),
