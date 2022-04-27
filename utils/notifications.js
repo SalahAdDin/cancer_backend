@@ -5,8 +5,6 @@ async function sendNotificationToDevice({ token, data, notification }) {
     token,
   };
 
-  console.log("Message: ", message);
-
   return await strapi.firebase
     .messaging()
     .send(message)
@@ -23,8 +21,6 @@ async function sendNotificationToTopic({ topic, notification, data }) {
     topic,
   };
 
-  console.log("Message: ", message);
-
   return await strapi.firebase
     .messaging()
     .send(message)
@@ -39,8 +35,6 @@ async function sendNotificationToGroup({ tokens, data }) {
     data,
     tokens,
   };
-
-  console.log("Message: ", message);
 
   return await strapi.firebase
     .messaging()

@@ -99,8 +99,6 @@ module.exports = {
         if (confirmed === true) {
           const { token } = profile;
 
-          console.log("Result profile: ", profile);
-
           const title = `Hoş geldiniz ${username}!`;
           const body = `Hesabınız, ${email} ile onaylandı.`;
 
