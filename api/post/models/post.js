@@ -4,7 +4,6 @@
  * Read the documentation (https://strapi.io/documentation/developer-docs/latest/development/backend-customization.html#lifecycle-hooks)
  * to customize this model
  */
-const { parseMultipartData, sanitizeEntity } = require("strapi-utils");
 const { sendNotificationToTopic } = require("../../../utils/notifications");
 
 module.exports = {
@@ -28,7 +27,7 @@ module.exports = {
             title,
             body,
             type: "NEW_POST",
-            data: { type, author: author.username },
+            data: JSON.stringify({ type, author: author.username }),
           },
           notification: {
             title,

@@ -4,6 +4,7 @@
  * Read the documentation (https://strapi.io/documentation/developer-docs/latest/development/backend-customization.html#lifecycle-hooks)
  * to customize this model
  */
+const { sendNotificationToTopic } = require("../../../utils/notifications");
 
 module.exports = {
   lifecycles: {

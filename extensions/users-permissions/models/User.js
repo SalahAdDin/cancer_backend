@@ -1,6 +1,9 @@
 "use strict";
 
-const { sendNotificationToDevice } = require("../../../utils/notifications");
+const {
+  sendNotificationToDevice,
+  sendNotificationToTopic,
+} = require("../../../utils/notifications");
 
 module.exports = {
   lifecycles: {
@@ -42,7 +45,7 @@ module.exports = {
             title,
             body,
             type: "NEW_USER_REGISTERED",
-            data: { id },
+            data: JSON.stringify({ id }),
           },
           notification: {
             title,
