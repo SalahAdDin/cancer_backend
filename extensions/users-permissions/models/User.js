@@ -6,14 +6,14 @@ module.exports = {
   lifecycles: {
     async afterCreate(result, data) {
       const { id, email, username } = result;
-      const title = `New registered user: ${username}`;
-      const body = `A new user registered with ${email} is waiting for your confirmation.`;
+      const title = `Yeni kayıtlı kullanıcı: ${username}`;
+      const body = `${email} ile kayıtlı yeni bir kullanıcı onayınızı bekliyor.`;
       const emailTemplate = {
-        subject: "New registered user: <%= user.username %>",
-        text: `New User Registered!
-          A new user registered with <%= user.email %> is waiting for your confirmation.`,
-        html: `<h1>New User Registered!</h1>
-          <p>A new user registered with <%= user.email %> is waiting for your confirmation.<p>`,
+        subject: "Yeni kayıtlı kullanıcı: <%= user.username %>",
+        text: `Yeni Kullanıcı Kayıtlı!
+          <%= user.email %> ile kayıtlı yeni bir kullanıcı onayınızı bekliyor.`,
+        html: `<h1>Yeni Kullanıcı Kayıtlı!</h1>
+          <p><strong><%= user.email %></strong> ile kayıtlı yeni bir kullanıcı onayınızı bekliyor.<p>`,
       };
 
       try {
@@ -55,11 +55,11 @@ module.exports = {
     },
     async afterDelete(result, params) {
       const emailTemplate = {
-        subject: "Good bye <%= user.username %>",
-        text: `We sorry for it!
-        Your user account, with <%= user.email %>, has been deleted.`,
-        html: `<h1>We sorry for it!</h1>
-        <p>Your user account, with <%= user.email %>, has been deleted.<p>`,
+        subject: "Güle güle <%= user.username %>",
+        text: `Bunun için üzgünüz!
+        <%= user.email %> ile kullanıcı hesabınız silindi.`,
+        html: `<h1>Bunun için üzgünüz!</h1>
+        <p><strong><%= user.email %></strong> ile kullanıcı hesabınız silindi.<p>`,
       };
 
       try {
@@ -83,11 +83,11 @@ module.exports = {
     },
     async afterUpdate(result, params, data) {
       const emailTemplate = {
-        subject: "Welcome <%= user.username %>",
-        text: `Welcome on JineOnkolojik Destek !
-          Your account is confirmed with: <%= user.email %>.`,
-        html: `<h1>Welcome on JineOnkolojik Destek !</h1>
-          <p>Your account is now confirmed with: <%= user.email %>.<p>`,
+        subject: "Hoş geldiniz <%= user.username %>!",
+        text: `JineOnkolojik Destek'e Hoş Geldiniz!
+          Hesabınız, <%= user.email %> ile onaylandı.`,
+        html: `<h1>JineOnkolojik Destek'e Hoş Geldiniz!</h1>
+          <p>Hesabınız, <strong><%= user.email %></strong> ile onaylandı.<p>`,
       };
       const { confirmed, email, profile, username } = result;
 
@@ -98,8 +98,8 @@ module.exports = {
 
           console.log("Result profile: ", profile);
 
-          const title = `Welcome ${username}!`;
-          const body = `Your account is confirmed with: ${email}.`;
+          const title = `Hoş geldiniz ${username}!`;
+          const body = `Hesabınız, ${email} ile onaylandı.`;
 
           await sendNotificationToDevice({
             token,

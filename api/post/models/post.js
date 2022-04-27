@@ -19,7 +19,8 @@ module.exports = {
     },
     async afterCreate(result, data) {
       const { type, author, title } = result;
-      const body = `${author.username} has published a new post for ${type}!`;
+      const body = `${author.username}, ${type} için yeni bir gönderi yayınladı!`;
+
       try {
         await sendNotificationToTopic({
           topic: "posts",

@@ -8,8 +8,8 @@
 module.exports = {
   lifecycles: {
     async afterUpdate(result, params, data) {
-      const title = "Settings";
-      const body = "Application settings where updated.";
+      const title = "Ayarlar";
+      const body = "Uygulama ayarları güncellenmişti.";
       try {
         await sendNotificationToTopic({
           topic: "settings",
