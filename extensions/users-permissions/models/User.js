@@ -26,12 +26,16 @@ module.exports = {
         await strapi
           .query("user", "users-permissions")
           .update({ id }, { confirmed: false });
-        const admins = await strapi.query("user", "admin").findOne({ id: 1 });
+        const admins = await strapi.query("user", "admin").find({
+          isActive: true,
+          blocked: false,
+          "roles.code": "strapi-super-admin",
+        });
+        const emails = admins.map((admin) => admin.email);
 
         await strapi.plugins["email"].services.email.sendTemplatedEmail(
           {
-            // First admin user should be the main one, at first.
-            to: admins.email,
+            to: emails,
           },
           emailTemplate,
           {
