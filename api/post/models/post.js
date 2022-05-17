@@ -27,7 +27,7 @@ module.exports = {
             title,
             body,
             type: "NEW_POST",
-            data: JSON.stringify({ type, author: author.username }),
+            data: JSON.stringify({ type, author: author.id }),
           },
           notification: {
             title,
