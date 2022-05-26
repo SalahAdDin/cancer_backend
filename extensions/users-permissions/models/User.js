@@ -28,7 +28,6 @@ module.exports = {
           .update({ id }, { confirmed: false });
         const admins = await strapi.query("user", "admin").find({
           isActive: true,
-          blocked: false,
           "roles.code": "strapi-super-admin",
         });
         const emails = admins.map((admin) => admin.email);
