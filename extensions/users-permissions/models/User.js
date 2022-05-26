@@ -34,7 +34,7 @@ module.exports = {
 
         await strapi.plugins["email"].services.email.sendTemplatedEmail(
           {
-            to: emails,
+            to: emails.toString(),
           },
           emailTemplate,
           {
