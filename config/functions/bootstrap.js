@@ -1,6 +1,8 @@
 "use strict";
 const admin = require("firebase-admin");
-const serviceAccount = require("../../serviceAccountKey.json");
+const serviceAccount = JSON.parse(
+  Buffer.from(process.env.FIREBASE_CONFIG_BASE64, "base64").toString("ascii")
+);
 
 /**
  * An asynchronous bootstrap function that runs before

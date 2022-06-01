@@ -1,7 +1,7 @@
 {
   "name": "backend-dev",
   "private": true,
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A Strapi application",
   "scripts": {
     "develop": "strapi develop",
@@ -15,6 +15,7 @@
     "knex": "0.21.18",
     "pg": "^8.7.1",
     "pg-connection-string": "^2.5.0",
+    "sqlite3": "^5.0.8",
     "strapi": "3.6.10",
     "strapi-admin": "3.6.10",
     "strapi-connector-bookshelf": "3.6.10",
