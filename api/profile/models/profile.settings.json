@@ -76,6 +76,10 @@
     "uid": {
       "type": "string",
       "unique": true
+    },
+    "token": {
+      "type": "string",
+      "unique": true
     }
   }
 }
